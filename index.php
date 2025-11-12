@@ -80,7 +80,7 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200">
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150 bg-linear-20 from-[#00770a] from-5% via-[#c2ffba] via-30% to-[#fff] to-90%">
+                        <tr class="hover:bg-[#eeeeeebe] transition duration-150 bg-linear-20 from-[#33ac3d] from-10% via-[#d5ffd0] via-35% to-[#fff] to-90%">
                             <td class="py-4 px-6">
                                 <div class="flex items-center">
                                     <span class="bg-yellow-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">1</span>
@@ -291,11 +291,11 @@
                 <h3 class="text-lg font-semibold text-gray-800 mb-4">Close Competition</h3>
                 <div class="space-y-2">
                     <div class="flex justify-between">
-                        <span>College of Computing</span>
+                        <span>College of Education</span>
                         <span class="font-bold">105</span>
                     </div>
                     <div class="flex justify-between">
-                        <span>College of Engineering</span>
+                        <span>College of Engineering and Technology</span>
                         <span class="font-bold">105</span>
                     </div>
                     <div class="text-sm text-gray-500 mt-2">Tied for 2nd place</div>
