@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer components {
+    .titles {
+        @apply text-[#252525] hover:text-[#8f8f8f] cursor-pointer transition duration-100;
+    }
+    .title {
+        @apply text-[30px];
+    }
+    .subheading {
+        @apply text-[18px] text-[#505050];
+    }
+}
