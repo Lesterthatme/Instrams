@@ -5,7 +5,7 @@
         @apply text-[#383838] cursor-pointer transition duration-100;
     }
     .title {
-        @apply text-[28px];
+        @apply text-[26px];
     }
     .subheading {
         @apply text-[18px] text-[#505050];
@@ -46,6 +46,40 @@
     .IVM {
         @apply bg-linear-20 from-[#2e2e2e] from-10% via-[#d3d3d3] via-35% to-[#fff] to-90%;
     }
+
+    .round {
+        @apply rounded-full px-2 py-1 mt-1;
+    }
+    .ca {
+        @apply text-[#28c936] bg-[#effff0];
+    }
+    .coed {
+        @apply text-[#285bc9] bg-[#ecf2ff];
+    }
+    .cet {
+        @apply text-[#c92828] bg-[#fff3f3];
+    }
+    .cm {
+        @apply text-[#8e28c9] bg-[#f9eeff];
+    }
+    .drt {
+        @apply text-[#707070] bg-[#ececec];
+    }
+    .btvc {
+        @apply text-[#c9c628] bg-[#ffffee];
+    }
+    .ffhnas {
+        @apply text-[#c99628] bg-[#fffaef];
+    }
+    .ias {
+        @apply text-[#c9288b] bg-[#ffecf8];
+    }
+    .ics {
+        @apply text-[#c97028] bg-[#fff6ef];
+    }
+    .ivm {
+        @apply text-[#2e2e2e] bg-[#cccccc];
+    }
     
     @media (max-width: 400px) {
         .title {
@@ -80,15 +114,6 @@
         @apply text-[#0c0c0c] font-semibold;
     }
     
-    @media (max-width: 400px) {
-        .title {
-            @apply text-[22px];
-        }
-        .subheading {
-            @apply text-[16px];
-        }
-    }
-    
     .schedule-row {
         @apply transition duration-150 ease-in-out;
     }
@@ -111,5 +136,74 @@
     
     .sport-icon {
         @apply h-10 w-10 rounded-full bg-amber-100 flex items-center justify-center mr-3;
+    }
+    
+    .sport-section {
+        @apply border-b border-gray-200 last:border-b-0;
+    }
+    
+    .sport-header {
+        @apply transition-all duration-300;
+    }
+    
+    .sport-content {
+        @apply transition-all duration-300 overflow-hidden;
+    }
+    
+    .sport-header.active {
+        @apply bg-amber-50;
+    }
+    
+    .sport-header.active i.fa-chevron-down {
+        @apply transform rotate-180;
+    }
+    
+    .results-table {
+        @apply min-w-full;
+    }
+    
+    .results-table th {
+        @apply bg-amber-100 text-gray-700 font-bold py-3 px-4;
+    }
+    
+    .results-table td {
+        @apply py-3 px-4 border-b border-gray-200;
+    }
+    
+    .medal-gold {
+        @apply font-bold text-yellow-600;
+    }
+    
+    .medal-silver {
+        @apply font-medium text-gray-600;
+    }
+    
+    .medal-bronze {
+        @apply font-medium text-amber-700;
+    }
+    
+    .team-result {
+        @apply flex items-center justify-center;
+    }
+    
+    .individual-result {
+        @apply flex items-center justify-center;
+    }
+    
+    @media (max-width: 640px) {
+        .mobile-text-sm {
+            font-size: 0.75rem;
+        }
+        .mobile-text-xs {
+            font-size: 0.7rem;
+        }
+        .mobile-py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .mobile-px-3 {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
     }
 }

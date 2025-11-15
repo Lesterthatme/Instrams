@@ -23,6 +23,7 @@
             <div class="hidden sm:block">
                 <ul class="flex space-x-7 lg:space-x-10">
                     <li class="hover-nav"><a href="./pages/schedule.php" class="flex items-center gap-2"><i class="fas fa-calendar-alt text-sm"></i> Schedule</a></li>
+                    <li class="hover-nav"><a href="./pages/results.php" class="flex items-center gap-2"><i class="fas fa-trophy text-sm"></i> Results</a></li>
                 </ul>
             </div>
             <div class="sm:hidden">
@@ -34,6 +35,7 @@
         <div id="mobile-menu" class="hidden sm:hidden bg-white mt-3 rounded-lg shadow-lg border-amber-200 py-2">
             <ul class="space-y-1">
                 <li><a href="./pages/schedule.php" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-calendar-alt mr-3"></i>Schedule</a></li>
+                <li><a href="./pages/results.php" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-trophy mr-3"></i>Results</a></li>
             </ul>
         </div>
     </nav>
@@ -86,7 +88,7 @@
 
         <div class="py-3 flex flex-col md:flex-row justify-between items-start md:items-center mb-6 bg-gradient-to-r from-white to-amber-50 rounded-2xl p-5 shadow-sm border border-amber-100">
             <div class="flex flex-col items-start mb-4 md:mb-0">
-                <span class="text-amber-700 text-sm xs:text-xl font-medium mt-1 bg-amber-100 px-3 py-1 rounded-full">Medal Table</span>
+                <span class="text-amber-700 text-sm xs:text-xl font-medium mt-1 bg-amber-100 px-3 py-1 rounded-full">Overall Medal Tally</span>
             </div>
             <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
                 <div class="relative">

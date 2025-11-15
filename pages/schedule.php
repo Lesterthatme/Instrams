@@ -22,6 +22,7 @@
             <div class="hidden sm:block">
                 <ul class="flex space-x-7 lg:space-x-10">
                     <li class="hover-nav active-nav"><a href="./schedule.php" class="flex items-center gap-2"><i class="fas fa-calendar-alt text-sm"></i> Schedule</a></li>
+                    <li class="hover-nav"><a href="./results.php" class="flex items-center gap-2"><i class="fas fa-trophy text-sm"></i> Results</a></li>
                 </ul>
             </div>
             <div class="sm:hidden">
@@ -33,6 +34,7 @@
         <div id="mobile-menu" class="hidden sm:hidden bg-white mt-3 rounded-lg shadow-lg border-amber-200 py-2">
             <ul class="space-y-1">
                 <li><a href="./schedule.php" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text active-nav"><i class="fas fa-calendar-alt mr-3"></i>Schedule</a></li>
+                <li><a href="./results.php" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-trophy mr-3"></i>Results</a></li>
             </ul>
         </div>
     </nav>
