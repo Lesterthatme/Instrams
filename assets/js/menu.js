@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const sportFilter = document.querySelector('select');
     if (sportFilter) {
         sportFilter.addEventListener('change', function() {
-            // This would typically filter by sport in a real implementation
             console.log('Filter by sport:', this.value);
         });
     }

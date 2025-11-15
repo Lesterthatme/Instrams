@@ -75,4 +75,44 @@
     .total-count {
         @apply font-bold text-gray-800;
     }
+    
+    .active-nav {
+        @apply text-[#0c0c0c] font-semibold;
+    }
+    
+    @media (max-width: 400px) {
+        .title {
+            @apply text-[22px];
+        }
+        .subheading {
+            @apply text-[16px];
+        }
+    }
+    
+    .schedule-row {
+        @apply transition duration-150 ease-in-out;
+    }
+    
+    .status-scheduled {
+        @apply px-3 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800;
+    }
+    
+    .status-cancelled {
+        @apply px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800;
+    }
+    
+    .status-no-game {
+        @apply px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800;
+    }
+    
+    .venue-icon {
+        @apply text-amber-600 mr-2;
+    }
+    
+    .sport-icon {
+        @apply h-10 w-10 rounded-full bg-amber-100 flex items-center justify-center mr-3;
+    }
+}
+
+@layer components {
 }

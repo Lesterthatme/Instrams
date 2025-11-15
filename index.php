@@ -23,8 +23,6 @@
             <div class="hidden sm:block">
                 <ul class="flex space-x-7 lg:space-x-10">
                     <li class="hover-nav"><a href="./pages/schedule.php" class="flex items-center gap-2"><i class="fas fa-calendar-alt text-sm"></i> Schedule</a></li>
-                    <li class="hover-nav"><a href="#" class="flex items-center gap-2"><i class="fas fa-trophy text-sm"></i> Results</a></li>
-                    <li class="hover-nav"><a href="#" class="flex items-center gap-2"><i class="fas fa-users text-sm"></i> Teams</a></li>
                 </ul>
             </div>
             <div class="sm:hidden">
@@ -36,8 +34,6 @@
         <div id="mobile-menu" class="hidden sm:hidden bg-white mt-3 rounded-lg shadow-lg border-amber-200 py-2">
             <ul class="space-y-1">
                 <li><a href="./pages/schedule.php" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-calendar-alt mr-3"></i>Schedule</a></li>
-                <li><a href="#" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-trophy mr-3"></i>Results</a></li>
-                <li><a href="#" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-users mr-3"></i>Teams</a></li>
             </ul>
         </div>
     </nav>
@@ -48,12 +44,48 @@
                 <div class="flex items-center justify-center h-40 w-100"><img src="./assets/img/BSAU_Sportsfest.svg" alt="BSAU_Sportsfest"></div>
             </div>
         </div>
+        <div class="items-center justify-start sm:block hidden">
+            <h1 class="text-gray-800 text-2xl xs:text-3xl font-bold tracking-tight">BSAU Sportsfest 2025</h1>
+        </div>
+
+        <div class="sm:mt-5 mt-0 grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+            <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100 hover:shadow-lg transition duration-300">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Top Performing Institute</h3>
+                    <div class="h-8 w-8 rounded-full bg-gradient-to-r from-amber-500 to-amber-700 flex items-center justify-center">
+                        <i class="fas fa-trophy text-white text-sm"></i>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="relative">
+                        <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.svg" alt="CA_Logo">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">College of Agriculture</h4>
+                        <p class="text-amber-700 font-medium">133 Total Medals</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100 hover:shadow-lg transition duration-300">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Most Gold Medals</h3>
+                    <div class="h-8 w-8 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-medal text-white text-sm"></i>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.svg" alt="CA_Logo">
+                    <div>
+                        <h4 class="font-bold text-lg">College of Agriculture</h4>
+                        <p class="text-amber-700 font-medium">36 Gold Medals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="py-3 flex flex-col md:flex-row justify-between items-start md:items-center mb-6 bg-gradient-to-r from-white to-amber-50 rounded-2xl p-5 shadow-sm border border-amber-100">
             <div class="flex flex-col items-start mb-4 md:mb-0">
-                <div class="flex items-center justify-center gap-2 mb-1">
-                    <h1 class="text-gray-800 text-2xl xs:text-3xl font-bold tracking-tight">BSAU Sportsfest 2025</h1>
-                </div>
                 <span class="text-amber-700 text-sm xs:text-xl font-medium mt-1 bg-amber-100 px-3 py-1 rounded-full">Medal Table</span>
             </div>
             <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -301,41 +333,6 @@
             </div>
         </section>
         
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100 hover:shadow-lg transition duration-300">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg font-bold text-gray-800">Top Performing Institute</h3>
-                    <div class="h-8 w-8 rounded-full bg-gradient-to-r from-amber-500 to-amber-700 flex items-center justify-center">
-                        <i class="fas fa-trophy text-white text-sm"></i>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <div class="relative">
-                        <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.svg" alt="CA_Logo">
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg">College of Agriculture</h4>
-                        <p class="text-amber-700 font-medium">133 Total Medals</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100 hover:shadow-lg transition duration-300">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg font-bold text-gray-800">Most Gold Medals</h3>
-                    <div class="h-8 w-8 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-600 flex items-center justify-center">
-                        <i class="fas fa-medal text-white text-sm"></i>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.svg" alt="CA_Logo">
-                    <div>
-                        <h4 class="font-bold text-lg">College of Agriculture</h4>
-                        <p class="text-amber-700 font-medium">36 Gold Medals</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     
     <footer class="bg-gradient-to-r from-amber-50 to-amber-100 border-t border-amber-200 py-6 px-[5%] mt-12">
