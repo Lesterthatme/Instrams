@@ -19,7 +19,7 @@
     .CA {
         @apply bg-linear-20 from-[#28c936] from-10% via-[#d5ffd0] via-35% to-[#fff] to-90%;
     }
-    .EDUC {
+    .COED {
         @apply bg-linear-20 from-[#285bc9] from-10% via-[#d0d7ff] via-35% to-[#fff] to-90%;
     }
     .CET {

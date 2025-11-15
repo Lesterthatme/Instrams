@@ -42,11 +42,16 @@
         </div>
     </nav>
 
-    <div class="md:px-[8%] sm:px-[5%] px-[3%] min-h-screen py-6"> 
+    <div class="md:px-[8%] sm:px-[5%] px-[3%] min-h-screen py-6">
+        <div class="sm:hidden block">
+            <div class="flex items-center justify-center mb-1">
+                <div class="flex items-center justify-center h-40 w-100"><img src="./assets/img/BSAU_Sportsfest.svg" alt="BSAU_Sportsfest"></div>
+            </div>
+        </div>
+
         <div class="py-3 flex flex-col md:flex-row justify-between items-start md:items-center mb-6 bg-gradient-to-r from-white to-amber-50 rounded-2xl p-5 shadow-sm border border-amber-100">
             <div class="flex flex-col items-start mb-4 md:mb-0">
-                <div class="flex items-center gap-2 mb-1">
-                    <div class="h-3 w-3 bg-gradient-to-r from-amber-500 to-amber-700 rounded-full"></div>
+                <div class="flex items-center justify-center gap-2 mb-1">
                     <h1 class="text-gray-800 text-2xl xs:text-3xl font-bold tracking-tight">BSAU Sportsfest 2025</h1>
                 </div>
                 <span class="text-amber-700 text-sm xs:text-xl font-medium mt-1 bg-amber-100 px-3 py-1 rounded-full">Medal Table</span>
@@ -83,19 +88,19 @@
                             <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">
                                 <div class="flex items-center justify-center">
                                     <i class="fas fa-medal text-yellow-500 mr-2"></i>
-                                    <span class="hidden xs:inline">Gold</span>
+                                    <span class="xs:inline">Gold</span>
                                 </div>
                             </th>
                             <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">
                                 <div class="flex items-center justify-center">
                                     <i class="fas fa-medal text-gray-400 mr-2"></i>
-                                    <span class="hidden xs:inline">Silver</span>
+                                    <span class="xs:inline">Silver</span>
                                 </div>
                             </th>
                             <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">
                                 <div class="flex items-center justify-center">
                                     <i class="fas fa-medal text-amber-700 mr-2"></i>
-                                    <span class="hidden xs:inline">Bronze</span>
+                                    <span class="xs:inline">Bronze</span>
                                 </div>
                             </th>
                             <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">Total</th>
@@ -110,10 +115,9 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <div class="relative">
-                                        <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    </div>
-                                    <span class="font-medium text-sm xs:text-base">College of Agriculture</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.svg" alt="CA_Logo">
+                                    <span class="font-medium text-sm xs:text-base hidden sm:block">College of Agriculture</span>
+                                    <span class="font-medium text-sm xs:text-base sm:hidden">CA</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">36</td>
@@ -122,7 +126,7 @@
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">133</td>
                         </tr>
                         
-                        <tr class="hover:bg-amber-50 transition duration-150 EDUC group">
+                        <tr class="hover:bg-amber-50 transition duration-150 COED group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
                                     <span class="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm group-hover:scale-110 transition duration-200">2</span>
@@ -130,8 +134,9 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium text-sm xs:text-base">College of Education</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/COED_Logo.svg" alt="COED_Logo">
+                                    <span class="font-medium text-sm xs:text-base hidden sm:block">College of Education</span>
+                                    <span class="font-medium text-sm xs:text-base sm:hidden">COED</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">28</td>
@@ -148,8 +153,9 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium text-sm xs:text-base">College of Engineering and Technology</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CET_Logo.svg" alt="CET_Logo">
+                                    <span class="font-medium text-sm xs:text-base hidden sm:block">College of Engineering and Technology</span>
+                                    <span class="font-medium text-sm xs:text-base sm:hidden">CET</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">25</td>
@@ -166,8 +172,9 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium text-sm xs:text-base">College of Management</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CM_Logo.svg" alt="CM_Logo">
+                                    <span class="font-medium text-sm xs:text-base hidden sm:block">College of Management</span>
+                                    <span class="font-medium text-sm xs:text-base sm:hidden">CM</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">22</td>
@@ -184,8 +191,9 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium text-sm xs:text-base">DRT Campus</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/DRT_Logo.svg" alt="DRT_Logo">
+                                    <span class="font-medium text-sm xs:text-base hidden sm:block">DRT Campus</span>
+                                    <span class="font-medium text-sm xs:text-base sm:hidden">DRT</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
@@ -202,8 +210,9 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium text-sm xs:text-base">BTVC</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/BTVC_Logo.svg" alt="BTVC_Logo">
+                                    <span class="font-medium text-sm xs:text-base hidden sm:block">Balagtas Technical Vocational College</span>
+                                    <span class="font-medium text-sm xs:text-base sm:hidden">BTVC</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
@@ -220,8 +229,9 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium text-sm xs:text-base">FFHNAS</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/FFHNAS_Logo.svg" alt="FFHNAS_Logo">
+                                    <span class="font-medium text-sm xs:text-base hidden sm:block">Fortunato F. Halili National Agricultural School</span>
+                                    <span class="font-medium text-sm xs:text-base sm:hidden">FFHNAS</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
@@ -238,8 +248,9 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium text-sm xs:text-base">Institute of Arts and Sciences</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/IAS_Logo.svg" alt="IAS_Logo">
+                                    <span class="font-medium text-sm xs:text-base hidden sm:block">Institute of Arts and Sciences</span>
+                                    <span class="font-medium text-sm xs:text-base sm:hidden">IAS</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
@@ -256,8 +267,9 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium text-sm xs:text-base">Institute of Computer Studies</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/ICS_Logo.svg" alt="ICS_Logo">
+                                    <span class="font-medium text-sm xs:text-base hidden sm:block">Institute of Computer Studies</span>
+                                    <span class="font-medium text-sm xs:text-base sm:hidden">ICS</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
@@ -274,8 +286,9 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium text-sm xs:text-base">Institute of Veterenary Medicine</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/IVM_Logo.svg" alt="IVM_Logo">
+                                    <span class="font-medium text-sm xs:text-base hidden sm:block">Institute of Veterenary Medicine</span>
+                                    <span class="font-medium text-sm xs:text-base sm:hidden">IVM</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
@@ -298,7 +311,7 @@
                 </div>
                 <div class="flex items-center">
                     <div class="relative">
-                        <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                        <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.svg" alt="CA_Logo">
                     </div>
                     <div>
                         <h4 class="font-bold text-lg">College of Agriculture</h4>
@@ -315,7 +328,7 @@
                     </div>
                 </div>
                 <div class="flex items-center">
-                    <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                    <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.svg" alt="CA_Logo">
                     <div>
                         <h4 class="font-bold text-lg">College of Agriculture</h4>
                         <p class="text-amber-700 font-medium">36 Gold Medals</p>
@@ -326,10 +339,13 @@
     </div>
     
     <footer class="bg-gradient-to-r from-amber-50 to-amber-100 border-t border-amber-200 py-6 px-[5%] mt-12">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="flex items-center mb-4 md:mb-0">
-                <img class="h-10 w-10 mr-3 rounded-full border border-amber-300" src="./assets/img/BASC_sports_development_office.png" alt="BASC_sports_development_office_LOGO">
-                <div>
+        <div class="flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex sm:flex-row flex-col items-center mb-4 md:mb-0">
+                <div class="flex flex-row sm:gap-0 gap-1 mb-1 sm:mb-0">
+                    <img class="h-10 w-10 mr-0 sm:mr-2 rounded-full border border-amber-300" src="./assets/img/BASC_sports_development_office.png" alt="BASC_sports_development_office_LOGO">
+                    <img class="h-10 w-10 mr-0 sm:mr-3 rounded-full border border-amber-300" src="./assets/img/BASC_Logo.svg" alt="BASC_LOGO">
+                </div>
+                <div class="flex flex-col sm:text-start text-center">
                     <span class="text-gray-700 font-bold block">BASC Sports Development Office</span>
                     <span class="text-gray-600 text-sm">Promoting Sports Excellence</span>
                 </div>
