@@ -2,12 +2,77 @@
 
 @layer components {
     .titles {
-        @apply text-[#252525] hover:text-[#8f8f8f] cursor-pointer transition duration-100;
+        @apply text-[#383838] cursor-pointer transition duration-100;
     }
     .title {
-        @apply text-[30px];
+        @apply text-[28px];
     }
     .subheading {
         @apply text-[18px] text-[#505050];
+    }
+    .hover-nav {
+        @apply text-[18px] text-[#505050] hover:text-[#0c0c0c] hover:font-semibold transition cursor-pointer duration-100;
+    }
+    .nav-text {
+        @apply text-[14px];
+    }
+    .CA {
+        @apply bg-linear-20 from-[#28c936] from-10% via-[#d5ffd0] via-35% to-[#fff] to-90%;
+    }
+    .EDUC {
+        @apply bg-linear-20 from-[#285bc9] from-10% via-[#d0d7ff] via-35% to-[#fff] to-90%;
+    }
+    .CET {
+        @apply bg-linear-20 from-[#c92828] from-10% via-[#ffd0d0] via-35% to-[#fff] to-90%;
+    }
+    .CM {
+        @apply bg-linear-20 from-[#8e28c9] from-10% via-[#f6d0ff] via-35% to-[#fff] to-90%;
+    }
+    .DRT {
+        @apply bg-linear-20 from-[#707070] from-10% via-[#c2c2c2] via-35% to-[#fff] to-90%;
+    }
+    .BTVC {
+        @apply bg-linear-20 from-[#c9c628] from-10% via-[#fffcd0] via-35% to-[#fff] to-90%;
+    }
+    .FFHNAS {
+        @apply bg-linear-20 from-[#c99628] from-10% via-[#fff4d0] via-35% to-[#fff] to-90%;
+    }
+    .IAS {
+        @apply bg-linear-20 from-[#c9288b] from-10% via-[#ffd0f5] via-35% to-[#fff] to-90%;
+    }
+    .ICS {
+        @apply bg-linear-20 from-[#c97028] from-10% via-[#ffebd0] via-35% to-[#fff] to-90%;
+    }
+    .IVM {
+        @apply bg-linear-20 from-[#2e2e2e] from-10% via-[#d3d3d3] via-35% to-[#fff] to-90%;
+    }
+    
+    @media (max-width: 400px) {
+        .title {
+            @apply text-[22px];
+        }
+        .subheading {
+            @apply text-[16px];
+        }
+    }
+    
+    .table-row-hover {
+        @apply transition duration-150 ease-in-out transform hover:scale-[1.01];
+    }
+    
+    .gold-count {
+        @apply font-bold text-yellow-600;
+    }
+    
+    .silver-count {
+        @apply font-bold text-gray-500;
+    }
+    
+    .bronze-count {
+        @apply font-bold text-amber-700;
+    }
+    
+    .total-count {
+        @apply font-bold text-gray-800;
     }
 }

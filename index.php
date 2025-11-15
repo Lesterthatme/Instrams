@@ -1,7 +1,6 @@
 <?php
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,29 +11,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50">
-    <nav class="bg-amber-50 px-[5%] py-[10px] shadow-sm border-b border-gray-200 sticky top-0 z-10">
+    <nav class="bg-gradient-to-r from-amber-50 to-amber-100 px-[5%] py-3 shadow-lg sticky top-0 z-10">
         <div class="w-full flex justify-between items-center">
-            <div class="flex items-center justify-center font-bold gap-2">
-                <img class="h-[50px] w-[50px]" src="./assets/img/BASC_sports_development_office.png" alt="BASC_sports_development_office_LOGO">
-                <h1 class="text-gray-800 hover:text-gray-600 cursor-pointer transition duration-100 text-2xl">BASC Sports Development Office</h1>
+            <div class="flex items-center justify-center font-bold gap-3">
+                <div class="relative">
+                    <img class="h-11 w-11 sm:h-14 sm:w-14 rounded-full border-2 border-amber-300 shadow-sm" src="./assets/img/BASC_sports_development_office.png" alt="BASC_sports_development_office_LOGO">
+                </div>
+                <h1 class="titles title hidden sm:block"><a href="#">BASC Sports Development Office</a></h1>
+                <h1 class="titles title sm:hidden"><a href="">BASC Sports</a></h1>
             </div>
-            <div class="">
+            <div class="hidden sm:block">
+                <ul class="flex space-x-7 lg:space-x-10">
+                    <li class="hover-nav"><a href="./pages/schedule.php" class="flex items-center gap-2"><i class="fas fa-calendar-alt text-sm"></i> Schedule</a></li>
+                    <li class="hover-nav"><a href="#" class="flex items-center gap-2"><i class="fas fa-trophy text-sm"></i> Results</a></li>
+                    <li class="hover-nav"><a href="#" class="flex items-center gap-2"><i class="fas fa-users text-sm"></i> Teams</a></li>
+                </ul>
             </div>
+            <div class="sm:hidden">
+                <button id="mobile-menu-button" class="p-2 rounded-lg bg-amber-200 hover:bg-amber-300 transition duration-200">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden sm:hidden bg-white mt-3 rounded-lg shadow-lg border-amber-200 py-2">
+            <ul class="space-y-1">
+                <li><a href="./pages/schedule.php" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-calendar-alt mr-3"></i>Schedule</a></li>
+                <li><a href="#" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-trophy mr-3"></i>Results</a></li>
+                <li><a href="#" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-users mr-3"></i>Teams</a></li>
+            </ul>
         </div>
     </nav>
 
-    <div class="px-[8%] min-h-screen py-8">
-        <div class="py-4 flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+    <div class="md:px-[8%] sm:px-[5%] px-[3%] min-h-screen py-6"> 
+        <div class="py-3 flex flex-col md:flex-row justify-between items-start md:items-center mb-6 bg-gradient-to-r from-white to-amber-50 rounded-2xl p-5 shadow-sm border border-amber-100">
             <div class="flex flex-col items-start mb-4 md:mb-0">
-                <h1 class="text-gray-800 hover:text-gray-600 cursor-pointer transition duration-100 text-3xl font-bold">BSAU Sportsfest 2025</h1>
-                <span class="text-gray-600 text-xl mt-1">Medal Table</span>
-            </div>
-            <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-                <div class="relative">
-                    <input type="text" placeholder="Search institute..." class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent w-full">
-                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                <div class="flex items-center gap-2 mb-1">
+                    <div class="h-3 w-3 bg-gradient-to-r from-amber-500 to-amber-700 rounded-full"></div>
+                    <h1 class="text-gray-800 text-2xl xs:text-3xl font-bold tracking-tight">BSAU Sportsfest 2025</h1>
                 </div>
-                <select class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent w-full md:w-auto">
+                <span class="text-amber-700 text-sm xs:text-xl font-medium mt-1 bg-amber-100 px-3 py-1 rounded-full">Medal Table</span>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                <div class="relative">
+                    <input type="text" placeholder="Search institute..." class="pl-10 pr-4 py-2.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent w-full text-sm xs:text-base shadow-sm">
+                    <i class="fas fa-search absolute left-3 top-3.5 text-gray-400"></i>
+                </div>
+                <select class="px-4 py-2.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent w-full md:w-auto text-sm xs:text-base shadow-sm bg-white">
                     <option>All Sports</option>
                     <option>Arnis</option>
                     <option>Badminton</option>
@@ -51,269 +73,278 @@
             </div>
         </div>
         
-        <section class="bg-white rounded-xl shadow-md overflow-hidden">
+        <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
             <div class="overflow-x-auto">
                 <table class="w-full">
-                    <thead class="bg-amber-50">
+                    <thead class="bg-gradient-to-r from-amber-50 to-amber-100">
                         <tr>
-                            <th class="py-4 px-6 text-left font-semibold text-gray-700">Rank</th>
-                            <th class="py-4 px-6 text-left font-semibold text-gray-700">Institute</th>
-                            <th class="py-4 px-6 text-center font-semibold text-gray-700">
+                            <th class="py-4 px-4 xs:px-6 text-left font-bold text-gray-700 text-sm xs:text-base">Rank</th>
+                            <th class="py-4 px-4 xs:px-6 text-left font-bold text-gray-700 text-sm xs:text-base">Institute</th>
+                            <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">
                                 <div class="flex items-center justify-center">
                                     <i class="fas fa-medal text-yellow-500 mr-2"></i>
-                                    Gold
+                                    <span class="hidden xs:inline">Gold</span>
                                 </div>
                             </th>
-                            <th class="py-4 px-6 text-center font-semibold text-gray-700">
+                            <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">
                                 <div class="flex items-center justify-center">
                                     <i class="fas fa-medal text-gray-400 mr-2"></i>
-                                    Silver
+                                    <span class="hidden xs:inline">Silver</span>
                                 </div>
                             </th>
-                            <th class="py-4 px-6 text-center font-semibold text-gray-700">
+                            <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">
                                 <div class="flex items-center justify-center">
                                     <i class="fas fa-medal text-amber-700 mr-2"></i>
-                                    Bronze
+                                    <span class="hidden xs:inline">Bronze</span>
                                 </div>
                             </th>
-                            <th class="py-4 px-6 text-center font-semibold text-gray-700">Total</th>
+                            <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">Total</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-gray-200">
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150 bg-linear-20 from-[#33ac3d] from-10% via-[#d5ffd0] via-35% to-[#fff] to-90%">
-                            <td class="py-4 px-6">
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="hover:bg-amber-50 transition duration-150 CA group">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-yellow-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">1</span>
+                                    <span class="bg-gradient-to-br from-yellow-500 to-yellow-600 text-white rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm group-hover:scale-110 transition duration-200">1</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-10 w-10 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium">College of Agriculture</span>
+                                    <div class="relative">
+                                        <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                                    </div>
+                                    <span class="font-medium text-sm xs:text-base">College of Agriculture</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-center font-bold text-yellow-600">36</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-500">57</td>
-                            <td class="py-4 px-6 text-center font-bold text-amber-700">40</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-800">133</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">36</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">57</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">40</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">133</td>
                         </tr>
                         
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150">
-                            <td class="py-4 px-6">
+                        <tr class="hover:bg-amber-50 transition duration-150 EDUC group">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-gray-400 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">2</span>
+                                    <span class="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm group-hover:scale-110 transition duration-200">2</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-10 w-10 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium">College of Education</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                                    <span class="font-medium text-sm xs:text-base">College of Education</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-center font-bold text-yellow-600">28</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-500">42</td>
-                            <td class="py-4 px-6 text-center font-bold text-amber-700">35</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-800">105</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">28</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">42</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">35</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">105</td>
                         </tr>
                         
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150">
-                            <td class="py-4 px-6">
+                        <tr class="hover:bg-amber-50 transition duration-150 CET group">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-amber-700 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">3</span>
+                                    <span class="bg-gradient-to-br from-amber-700 to-amber-800 text-white rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm group-hover:scale-110 transition duration-200">3</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-10 w-10 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium">College of Engineering and Technology</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                                    <span class="font-medium text-sm xs:text-base">College of Engineering and Technology</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-center font-bold text-yellow-600">25</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-500">38</td>
-                            <td class="py-4 px-6 text-center font-bold text-amber-700">42</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-800">105</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">25</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">38</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">42</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">105</td>
                         </tr>
                         
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150">
-                            <td class="py-4 px-6">
+                        <tr class="hover:bg-amber-50 transition duration-150 CM group">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-[#f1f1f1] text-gray-700 rounded-full h-8 w-8 flex items-center justify-center font-bold">4</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">4</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-10 w-10 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium">College of Management</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                                    <span class="font-medium text-sm xs:text-base">College of Management</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-center font-bold text-yellow-600">22</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-500">30</td>
-                            <td class="py-4 px-6 text-center font-bold text-amber-700">28</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-800">80</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">22</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">30</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">28</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">80</td>
                         </tr>
                         
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150">
-                            <td class="py-4 px-6">
+                        <tr class="hover:bg-amber-50 transition duration-150 DRT group">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-[#f1f1f1] text-gray-700 rounded-full h-8 w-8 flex items-center justify-center font-bold">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-10 w-10 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium">DRT Campus</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                                    <span class="font-medium text-sm xs:text-base">DRT Campus</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-center font-bold text-yellow-600">18</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-500">25</td>
-                            <td class="py-4 px-6 text-center font-bold text-amber-700">32</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-800">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
                         </tr>
 
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150">
-                            <td class="py-4 px-6">
+                        <tr class="hover:bg-amber-50 transition duration-150 BTVC group">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-[#f1f1f1] text-gray-700 rounded-full h-8 w-8 flex items-center justify-center font-bold">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-10 w-10 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium">BTVC</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                                    <span class="font-medium text-sm xs:text-base">BTVC</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-center font-bold text-yellow-600">18</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-500">25</td>
-                            <td class="py-4 px-6 text-center font-bold text-amber-700">32</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-800">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
                         </tr>
 
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150">
-                            <td class="py-4 px-6">
+                        <tr class="hover:bg-amber-50 transition duration-150 FFHNAS group">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-[#f1f1f1] text-gray-700 rounded-full h-8 w-8 flex items-center justify-center font-bold">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-10 w-10 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium">FFHNAS</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                                    <span class="font-medium text-sm xs:text-base">FFHNAS</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-center font-bold text-yellow-600">18</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-500">25</td>
-                            <td class="py-4 px-6 text-center font-bold text-amber-700">32</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-800">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
                         </tr>
 
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150">
-                            <td class="py-4 px-6">
+                        <tr class="hover:bg-amber-50 transition duration-150 IAS group">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-[#f1f1f1] text-gray-700 rounded-full h-8 w-8 flex items-center justify-center font-bold">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-10 w-10 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium">Institute of Arts and Sciences</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                                    <span class="font-medium text-sm xs:text-base">Institute of Arts and Sciences</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-center font-bold text-yellow-600">18</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-500">25</td>
-                            <td class="py-4 px-6 text-center font-bold text-amber-700">32</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-800">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
                         </tr>
 
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150">
-                            <td class="py-4 px-6">
+                        <tr class="hover:bg-amber-50 transition duration-150 ICS group">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-[#f1f1f1] text-gray-700 rounded-full h-8 w-8 flex items-center justify-center font-bold">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-10 w-10 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium">Institute of Computer Studies</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                                    <span class="font-medium text-sm xs:text-base">Institute of Computer Studies</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-center font-bold text-yellow-600">18</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-500">25</td>
-                            <td class="py-4 px-6 text-center font-bold text-amber-700">32</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-800">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
                         </tr>
 
-                        <tr class="hover:bg-[#eeeeeebe] transition duration-150">
-                            <td class="py-4 px-6">
+                        <tr class="hover:bg-amber-50 transition duration-150 IVM group">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-[#f1f1f1] text-gray-700 rounded-full h-8 w-8 flex items-center justify-center font-bold">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6">
+                            <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-10 w-10 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                                    <span class="font-medium">Institute of Veterenary Medicine</span>
+                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                                    <span class="font-medium text-sm xs:text-base">Institute of Veterenary Medicine</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-6 text-center font-bold text-yellow-600">18</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-500">25</td>
-                            <td class="py-4 px-6 text-center font-bold text-amber-700">32</td>
-                            <td class="py-4 px-6 text-center font-bold text-gray-800">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
         
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-xl shadow-md">
-                <h3 class="text-lg font-semibold text-gray-800 mb-4">Top Performing Institute</h3>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100 hover:shadow-lg transition duration-300">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Top Performing Institute</h3>
+                    <div class="h-8 w-8 rounded-full bg-gradient-to-r from-amber-500 to-amber-700 flex items-center justify-center">
+                        <i class="fas fa-trophy text-white text-sm"></i>
+                    </div>
+                </div>
                 <div class="flex items-center">
-                    <img class="h-16 w-16 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                    <div class="relative">
+                        <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                    </div>
                     <div>
-                        <h4 class="font-bold text-xl">College of Agriculture</h4>
-                        <p class="text-gray-600">133 Total Medals</p>
+                        <h4 class="font-bold text-lg">College of Agriculture</h4>
+                        <p class="text-amber-700 font-medium">133 Total Medals</p>
                     </div>
                 </div>
             </div>
             
-            <div class="bg-white p-6 rounded-xl shadow-md">
-                <h3 class="text-lg font-semibold text-gray-800 mb-4">Most Gold Medals</h3>
-                <div class="flex items-center">
-                    <img class="h-16 w-16 rounded-full mr-4" src="./assets/img/CA_Logo.png" alt="CA_Logo">
-                    <div>
-                        <h4 class="font-bold text-xl">College of Agriculture</h4>
-                        <p class="text-gray-600">36 Gold Medals</p>
+            <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100 hover:shadow-lg transition duration-300">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Most Gold Medals</h3>
+                    <div class="h-8 w-8 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-medal text-white text-sm"></i>
                     </div>
                 </div>
-            </div>
-            
-            <div class="bg-white p-6 rounded-xl shadow-md">
-                <h3 class="text-lg font-semibold text-gray-800 mb-4">Close Competition</h3>
-                <div class="space-y-2">
-                    <div class="flex justify-between">
-                        <span>College of Education</span>
-                        <span class="font-bold">105</span>
+                <div class="flex items-center">
+                    <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.png" alt="CA_Logo">
+                    <div>
+                        <h4 class="font-bold text-lg">College of Agriculture</h4>
+                        <p class="text-amber-700 font-medium">36 Gold Medals</p>
                     </div>
-                    <div class="flex justify-between">
-                        <span>College of Engineering and Technology</span>
-                        <span class="font-bold">105</span>
-                    </div>
-                    <div class="text-sm text-gray-500 mt-2">Tied for 2nd place</div>
                 </div>
             </div>
         </div>
     </div>
     
-    <footer class="bg-amber-50 border-t border-gray-200 py-6 px-[8%] mt-12">
+    <footer class="bg-gradient-to-r from-amber-50 to-amber-100 border-t border-amber-200 py-6 px-[5%] mt-12">
         <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center mb-4 md:mb-0">
-                <img class="h-10 w-10 mr-3" src="./assets/img/BASC_sports_development_office.png" alt="BASC_sports_development_office_LOGO">
-                <span class="text-gray-700 font-medium">BASC Sports Development Office</span>
+                <img class="h-10 w-10 mr-3 rounded-full border border-amber-300" src="./assets/img/BASC_sports_development_office.png" alt="BASC_sports_development_office_LOGO">
+                <div>
+                    <span class="text-gray-700 font-bold block">BASC Sports Development Office</span>
+                    <span class="text-gray-600 text-sm">Promoting Sports Excellence</span>
+                </div>
             </div>
-            <div class="text-gray-600 text-sm">
-                &copy; 2025 BSAU Sportsfest. All rights reserved.
+            <div class="flex space-x-4 mb-4 md:mb-0">
+                <a href="https://www.facebook.com/profile.php?id=100075441057933" class="h-10 w-10 rounded-full bg-amber-200 flex items-center justify-center hover:bg-amber-300 transition duration-200">
+                    <i class="fab fa-facebook-f text-gray-700"></i>
+                </a>
+            </div>
+            <div class="text-gray-600 text-sm text-center md:text-right">
+                <p>&copy; 2025 BSAU Sportsfest. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script src="./assets/js/menu.js"></script>
 </body>
 </html>
