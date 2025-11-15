@@ -75,7 +75,7 @@
     .total-count {
         @apply font-bold text-gray-800;
     }
-    
+
     .active-nav {
         @apply text-[#0c0c0c] font-semibold;
     }
@@ -112,7 +112,4 @@
     .sport-icon {
         @apply h-10 w-10 rounded-full bg-amber-100 flex items-center justify-center mr-3;
     }
-}
-
-@layer components {
 }
