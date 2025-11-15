@@ -21,6 +21,7 @@
             </div>
             <div class="hidden sm:block">
                 <ul class="flex space-x-7 lg:space-x-10">
+                    <li class="hover-nav"><a href="../index.php" class="flex items-center gap-2"><i class="fas fa-home text-sm"></i> Home</a></li>
                     <li class="hover-nav"><a href="./schedule.php" class="flex items-center gap-2"><i class="fas fa-calendar-alt text-sm"></i> Schedule</a></li>
                     <li class="hover-nav active-nav"><a href="./results.php" class="flex items-center gap-2"><i class="fas fa-trophy text-sm"></i> Results</a></li>
                 </ul>
@@ -33,6 +34,7 @@
         </div>
         <div id="mobile-menu" class="hidden sm:hidden bg-white mt-3 rounded-lg shadow-lg border-amber-200 py-2">
             <ul class="space-y-1">
+                <li><a href="../index.php" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-home mr-3"></i> Home</a></li>
                 <li><a href="./schedule.php" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text"><i class="fas fa-calendar-alt mr-3"></i>Schedule</a></li>
                 <li><a href="./results.php" class="block px-4 py-2 hover-nav hover:bg-amber-50 nav-text active-nav"><i class="fas fa-trophy mr-3"></i>Results</a></li>
             </ul>
@@ -148,11 +150,12 @@
                                                         <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Bronze</th>
                                                     </tr>
                                                 </thead>
+                                                <!-- Pili ka na lang kung alin mas maganda sa draw -->
                                                 <tbody class="divide-y divide-gray-200 bg-white">
                                                     <tr class="hover:bg-amber-50 transition duration-150">
                                                         <td class="py-3 px-3 font-medium text-xs sm:text-sm">Fin (50 kg below)</td>
                                                         <td class="py-3 px-3">
-                                                            <div class="flex flex-col items-center text-center">
+                                                            <div class="flex flex-col items-center text-center mb-1">
                                                                 <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
                                                                 <div class="flex items-center justify-center mb-1 ca round">
                                                                     <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
@@ -170,11 +173,18 @@
                                                             </div>
                                                         </td>
                                                         <td class="py-3 px-3">
-                                                            <div class="flex flex-col items-center text-center">
+                                                            <div class="flex flex-col items-center text-center coed rounded-[8px] mb-3 py-1 px-3">
                                                                 <span class="font-medium text-amber-700 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 coed round">
+                                                                <div class="flex items-center justify-center mb-1 round">
                                                                     <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
                                                                     <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center cet rounded-[8px] py-1 px-3">
+                                                                    <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mb-1 round">
+                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -183,28 +193,35 @@
                                                         <td class="py-3 px-3 font-medium text-xs sm:text-sm">Bantam (51-55 kg)</td>
                                                         <td class="py-3 px-3">
                                                             <div class="flex flex-col items-center text-center">
-                                                                    <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 cet round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
-                                                                    <span class="text-xs">CET</span>
+                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mb-1 drt round">
+                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                         <td class="py-3 px-3">
                                                             <div class="flex flex-col items-center text-center">
                                                                 <span class="font-medium text-gray-600 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 ca round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
-                                                                    <span class="text-xs">CA</span>
+                                                                <div class="flex items-center justify-center mb-1 btvc round">
+                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                         <td class="py-3 px-3">
-                                                            <div class="flex flex-col items-center text-center">
+                                                            <div class="flex flex-col items-center text-center mb-3 border-1 border-[#c5c5c5] py-1 px-3 rounded-md">
                                                                 <span class="font-medium text-amber-700 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 cm round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CM_Logo.svg" alt="CM">
-                                                                    <span class="text-xs">CM</span>
+                                                                <div class="flex items-center justify-center mb-1 ivm round">
+                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
+                                                                    <span class="text-xs">IVM</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center border-1 border-[#c5c5c5] py-1 px-3 rounded-md">
+                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mb-1 ics round">
+                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
                                                                 </div>
                                                             </div>
                                                         </td>

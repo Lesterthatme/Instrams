@@ -51,34 +51,34 @@
         @apply rounded-full px-2 py-1 mt-1;
     }
     .ca {
-        @apply text-[#28c936] bg-[#effff0];
+        @apply text-[#28c936] bg-[#effff0] shadow-md;
     }
     .coed {
-        @apply text-[#285bc9] bg-[#ecf2ff];
+        @apply text-[#285bc9] bg-[#ecf2ff] shadow-md;
     }
     .cet {
-        @apply text-[#c92828] bg-[#fff3f3];
+        @apply text-[#c92828] bg-[#fff3f3] shadow-md;
     }
     .cm {
-        @apply text-[#8e28c9] bg-[#f9eeff];
+        @apply text-[#8e28c9] bg-[#f9eeff] shadow-md;
     }
     .drt {
-        @apply text-[#707070] bg-[#ececec];
+        @apply text-[#707070] bg-[#f5f5f5] shadow-md;
     }
     .btvc {
-        @apply text-[#c9c628] bg-[#ffffee];
+        @apply text-[#c2bf07] bg-[#ffffee] shadow-md;
     }
     .ffhnas {
-        @apply text-[#c99628] bg-[#fffaef];
+        @apply text-[#c99628] bg-[#fffaef] shadow-md;
     }
     .ias {
-        @apply text-[#c9288b] bg-[#ffecf8];
+        @apply text-[#c9288b] bg-[#ffecf8] shadow-md;
     }
     .ics {
-        @apply text-[#c97028] bg-[#fff6ef];
+        @apply text-[#c97028] bg-[#fff6ef] shadow-md;
     }
     .ivm {
-        @apply text-[#2e2e2e] bg-[#cccccc];
+        @apply text-[#2e2e2e] bg-[#e6e6e6] shadow-md;
     }
     
     @media (max-width: 400px) {
