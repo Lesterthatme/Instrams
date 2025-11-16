@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="space-y-3">
-                    <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-amber-100">
+                    <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-amber-100 hidden">
                         <div class="flex items-center">
                             <div class="h-10 w-10 rounded-full bg-amber-100 flex items-center justify-center mr-3">
                                 <i class="fas fa-basketball-ball text-amber-600"></i>
@@ -74,7 +74,7 @@
                         </div>
                         <span class="text-amber-700 font-medium text-sm">AM/PM</span>
                     </div>
-                    <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-amber-100">
+                    <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-amber-100 hidden">
                         <div class="flex items-center">
                             <div class="h-10 w-10 rounded-full bg-amber-100 flex items-center justify-center mr-3">
                                 <i class="fas fa-volleyball-ball text-amber-600"></i>
@@ -85,6 +85,18 @@
                             </div>
                         </div>
                         <span class="text-amber-700 font-medium text-sm">AM/PM</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-amber-100">
+                        <div class="flex items-center">
+                            <div class="h-10 w-10 rounded-full bg-amber-100 flex items-center justify-center mr-3" title="No Game">
+                                <i class="fa-solid fa-circle-exclamation text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm">No Game</h4>
+                                <p class="text-xs text-gray-500">--</p>
+                            </div>
+                        </div>
+                        <span class="text-amber-700 font-medium text-sm">--:--</span>
                     </div>
                 </div>
             </div>
@@ -97,6 +109,15 @@
                     </div>
                 </div>
                 <div class="space-y-3">
+                    <div class="flex items-center p-3 bg-white rounded-lg border border-amber-100">
+                        <div class="h-10 w-10 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-crown text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-sm">Mr. & Ms. Intrams</h4>
+                            <p class="text-xs text-gray-500">Nov 17, Multi purpose gym</p>
+                        </div>
+                    </div>
                     <div class="flex items-center p-3 bg-white rounded-lg border border-amber-100">
                         <div class="h-10 w-10 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
                             <i class="fas fa-trophy text-yellow-600"></i>
