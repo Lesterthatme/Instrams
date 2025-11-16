@@ -36,27 +36,60 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    const searchInput = document.querySelector('input[type="text"]');
+    const searchInput = document.getElementById('institute-search');
+    const instituteFilter = document.getElementById('institute-filter');
+    
     if (searchInput) {
         searchInput.addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase();
-            const tableRows = document.querySelectorAll('tbody tr');
-            
-            tableRows.forEach(row => {
-                const instituteName = row.querySelector('td:nth-child(2) span').textContent.toLowerCase();
-                if (instituteName.includes(searchTerm)) {
-                    row.style.display = '';
-                } else {
-                    row.style.display = 'none';
-                }
-            });
+            filterInstitutes();
         });
     }
     
-    const sportFilter = document.querySelector('select');
-    if (sportFilter) {
-        sportFilter.addEventListener('change', function() {
-            console.log('Filter by sport:', this.value);
+    if (instituteFilter) {
+        instituteFilter.addEventListener('change', function() {
+            filterInstitutes();
         });
+    }
+    
+    function filterInstitutes() {
+        const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+        const selectedInstitute = instituteFilter ? instituteFilter.value : 'all';
+        const tableRows = document.querySelectorAll('tbody tr');
+        let hasVisibleRows = false;
+        
+        tableRows.forEach(row => {
+            const instituteCell = row.querySelector('td:nth-child(2)');
+            const spans = instituteCell.querySelectorAll('span');
+            const instituteAbbr = spans.length > 1 ? spans[1].textContent.toLowerCase() : spans[0].textContent.toLowerCase();
+            const instituteFullName = spans[0].textContent.toLowerCase();
+            
+            const matchesSearch = searchTerm === '' || instituteAbbr.includes(searchTerm) || instituteFullName.includes(searchTerm);
+            const matchesFilter = selectedInstitute === 'all' || instituteAbbr === selectedInstitute.toLowerCase();
+            
+            if (matchesSearch && matchesFilter) {
+                row.style.display = '';
+                hasVisibleRows = true;
+            } else {
+                row.style.display = 'none';
+            }
+        });
+        
+        const noResultsMsg = document.getElementById('no-results-message');
+        if (!hasVisibleRows && (searchTerm !== '' || selectedInstitute !== 'all')) {
+            if (!noResultsMsg) {
+                const newMsg = document.createElement('div');
+                newMsg.id = 'no-results-message';
+                newMsg.className = 'text-center py-12 bg-white rounded-lg border border-gray-200 my-6';
+                newMsg.innerHTML = `
+                    <i class="fas fa-search text-gray-400 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">No institutes found</h3>
+                    <p class="text-gray-500">Try adjusting your search or filter</p>
+                `;
+                const tableSection = document.querySelector('section');
+                tableSection.appendChild(newMsg);
+            }
+        } else if (noResultsMsg) {
+            noResultsMsg.remove();
+        }
     }
 });

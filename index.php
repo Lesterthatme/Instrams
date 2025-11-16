@@ -94,22 +94,21 @@
             </div>
             <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
                 <div class="relative">
-                    <input type="text" placeholder="Search institute..." class="pl-10 pr-4 py-2.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent w-full text-sm xs:text-base shadow-sm">
+                    <input type="text" id="institute-search" placeholder="Search institute..." class="pl-10 pr-4 py-2.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent w-full text-sm xs:text-base shadow-sm">
                     <i class="fas fa-search absolute left-3 top-3.5 text-gray-400"></i>
                 </div>
-                <select class="px-4 py-2.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent w-full md:w-auto text-sm xs:text-base shadow-sm bg-white">
-                    <option>All Sports</option>
-                    <option>Arnis</option>
-                    <option>Badminton</option>
-                    <option>Basketball</option>
-                    <option>Beach Volleyball</option>
-                    <option>Chess</option>
-                    <option>Lawn Tennis</option>
-                    <option>Mobile Legends</option>
-                    <option>Sepak Takraw</option>
-                    <option>Taekwondo</option>
-                    <option>Volleyball</option>
-                    <option>Table Tennis</option>
+                <select id="institute-filter" class="px-4 py-2.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent w-full md:w-auto text-sm xs:text-base shadow-sm bg-white">
+                    <option value="all">All Institutes</option>
+                    <option value="CA">CA</option>
+                    <option value="COED">COED</option>
+                    <option value="CET">CET</option>
+                    <option value="CM">CM</option>
+                    <option value="DRT">DRT</option>
+                    <option value="BTVC">BTVC</option>
+                    <option value="FFHNAS">FFHNAS</option>
+                    <option value="IAS">IAS</option>
+                    <option value="ICS">ICS</option>
+                    <option value="IVM">IVM</option>
                 </select>
             </div>
         </div>
