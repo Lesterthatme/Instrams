@@ -92,7 +92,7 @@
                                 <i class="fa-solid fa-circle-exclamation text-amber-600"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-sm">No Game</h4>
+                                <h4 class="font-semibold text-sm">No Data</h4>
                                 <p class="text-xs text-gray-500">--</p>
                             </div>
                         </div>
