@@ -146,8 +146,8 @@
                             <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">Total</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-gray-100">
-                        <tr class="hover:bg-amber-50 transition duration-150 CA group">
+                    <tbody class="divide-y divide-gray-100" id="ranking-div">
+                        <!-- <tr class="hover:bg-amber-50 transition duration-150 CA group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
                                     <span class="bg-gradient-to-br from-yellow-500 to-yellow-600 text-white rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm group-hover:scale-110 transition duration-200">1</span>
@@ -335,7 +335,7 @@
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
