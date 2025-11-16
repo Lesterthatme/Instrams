@@ -44,7 +44,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
             <div class="col-12">
                 <div class="row">
                     <div class="col-8">
-                        <h1 class="text-start">Admin Dashboard (kulang pa nung multiplier)</h1>
+                        <h1 class="text-start">Admin Dashboard</h1>
                     </div>
                     <div class="col-4 text-end">
                         <button id="quit-btn" class="btn btn-danger">Quit Button</button>
@@ -152,8 +152,8 @@ if (!isset($_SESSION['admin_logged_in'])) {
                                         <h3>Bronze</h3>
                                     </div>
                                     <div>
-                                        <button class="btn btn-success" id="add-another-silver">Add Another Silver</button>
-                                        <button class="btn btn-secondary d-none" id="remove-another-silver">Remove Another Silver</button>
+                                        <button class="btn btn-success" id="add-another-silver">Add Another Bronze</button>
+                                        <button class="btn btn-secondary d-none" id="remove-another-silver">Remove Another Bronze</button>
                                     </div>
                                 </div>
                                 <div class="row">
