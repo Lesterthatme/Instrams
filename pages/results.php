@@ -2,6 +2,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../assets/css/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body class="bg-gray-50">
     <nav class="bg-gradient-to-r from-amber-50 to-amber-100 px-[5%] py-3 shadow-lg sticky top-0 z-10">
         <div class="w-full flex justify-between items-center">
@@ -108,13 +110,13 @@
                 </select>
             </div>
         </div>
-        
+
         <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 mb-8">
             <div class="p-5 border-b border-gray-200">
                 <h2 class="text-xl font-bold text-gray-800">Competition Results</h2>
                 <p class="text-gray-600 mt-1">Click on each sport to view detailed results</p>
             </div>
-            
+
             <div class="divide-y divide-gray-100" id="results-accordion">
                 <div class="sport-section" data-sport="arnis">
                     <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
@@ -124,7 +126,7 @@
                                     <i class="fas fa-user-ninja text-red-600"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-lg text-gray-800">Arnis</h3>
+                                    <h3 class="font-bold text-lg text-gray-800">Combat Sports</h3>
                                     <p class="text-gray-600 text-xs">19 weight categories</p>
                                 </div>
                             </div>
@@ -181,7 +183,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="flex flex-col items-center text-center cet rounded-[8px] py-1 px-3">
-                                                                    <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
+                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
                                                                 <div class="flex items-center justify-center mb-1 round">
                                                                     <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
                                                                     <span class="text-xs">CET</span>
@@ -232,7 +234,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="mb-6">
                                 <h4 class="font-bold text-gray-700 mb-3 text-lg border-b pb-2">Arnis - Women</h4>
                                 <div class="overflow-x-auto -mx-2">
@@ -287,7 +289,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="sport-section" data-sport="badminton">
                     <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
                         <div class="flex justify-between items-center">
@@ -296,7 +298,7 @@
                                     <i class="fas fa-table-tennis text-blue-600"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-lg text-gray-800">Badminton</h3>
+                                    <h3 class="font-bold text-lg text-gray-800">Racket Sports</h3>
                                     <p class="text-gray-600 text-xs">5 events</p>
                                 </div>
                             </div>
@@ -384,7 +386,7 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        
+
                                         <h4 class="font-bold text-gray-700 mb-3 text-lg border-b pb-2">Badminton - Women</h4>
                                         <table class="min-w-full divide-y divide-gray-200">
                                             <thead class="bg-amber-100">
@@ -434,7 +436,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="sport-section" data-sport="basketball">
                     <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
                         <div class="flex justify-between items-center">
@@ -443,7 +445,7 @@
                                     <i class="fas fa-basketball-ball text-orange-600"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-lg text-gray-800">Basketball</h3>
+                                    <h3 class="font-bold text-lg text-gray-800">Ball Sports</h3>
                                     <p class="text-gray-600 text-xs">2 team events</p>
                                 </div>
                             </div>
@@ -530,11 +532,106 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="sport-section" data-sport="basketball">
+                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="h-10 w-10 rounded-full bg-orange-100 flex items-center justify-center mr-4">
+                                    <i class="fa fa-chess text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-800">Mind & E-Sports</h3>
+                                    <p class="text-gray-600 text-xs">2 team events</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium mr-3">2 Events</span>
+                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="sport-content hidden">
+                        <div class="p-4 bg-gray-50 border-t border-gray-200">
+                            <div class="overflow-x-auto -mx-2">
+                                <div class="min-w-full inline-block align-middle">
+                                    <div class="overflow-hidden">
+                                        <table class="min-w-full divide-y divide-gray-200">
+                                            <thead class="bg-amber-100">
+                                                <tr>
+                                                    <th class="py-3 px-3 text-left font-bold text-gray-700 text-xs sm:text-sm">Category</th>
+                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Gold</th>
+                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Silver</th>
+                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Bronze</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-gray-200 bg-white">
+                                                <tr class="hover:bg-amber-50 transition duration-150">
+                                                    <td class="py-3 px-3 font-medium text-xs sm:text-sm">Men's Basketball</td>
+                                                    <td class="py-3 px-3">
+                                                        <div class="flex flex-col items-center text-center">
+                                                            <div class="flex items-center justify-center mb-1">
+                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">CET</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-3 px-3">
+                                                        <div class="flex flex-col items-center text-center">
+                                                            <div class="flex items-center justify-center mb-1">
+                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                <span class="font-medium text-gray-600 text-xs sm:text-sm">CA</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-3 px-3">
+                                                        <div class="flex flex-col items-center text-center">
+                                                            <div class="flex items-center justify-center mb-1">
+                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                <span class="font-medium text-amber-700 text-xs sm:text-sm">COED</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="hover:bg-amber-50 transition duration-150">
+                                                    <td class="py-3 px-3 font-medium text-xs sm:text-sm">Women's Basketball</td>
+                                                    <td class="py-3 px-3">
+                                                        <div class="flex flex-col items-center text-center">
+                                                            <div class="flex items-center justify-center mb-1">
+                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">CA</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-3 px-3">
+                                                        <div class="flex flex-col items-center text-center">
+                                                            <div class="flex items-center justify-center mb-1">
+                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                <span class="font-medium text-gray-600 text-xs sm:text-sm">COED</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-3 px-3">
+                                                        <div class="flex flex-col items-center text-center">
+                                                            <div class="flex items-center justify-center mb-1">
+                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                <span class="font-medium text-amber-700 text-xs sm:text-sm">CET</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </div>
-    
+
     <footer class="bg-gradient-to-r from-amber-50 to-amber-100 border-t border-amber-200 py-6 px-[5%] mt-12">
         <div class="flex flex-col sm:flex-row justify-between items-center">
             <div class="flex sm:flex-row flex-col items-center mb-4 md:mb-0">
@@ -561,4 +658,5 @@
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/js/results.js"></script>
 </body>
+
 </html>
