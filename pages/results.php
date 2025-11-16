@@ -113,12 +113,12 @@
 
         <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 mb-8">
             <div class="p-5 border-b border-gray-200">
-                <h2 class="text-xl font-bold text-gray-800">Competition Results</h2>
-                <p class="text-gray-600 mt-1">Click on each sport to view detailed results</p>
+                <h2 class="text-lg font-bold text-gray-800">Competition Results</h2>
+                <p class="text-gray-600 mt-1 text-xs">Click on each sport to view detailed results</p>
             </div>
 
             <div class="divide-y divide-gray-100" id="results-accordion">
-                <div class="sport-section" data-sport="arnis">
+                <div class="sport-section" data-sport="combat">
                     <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
                         <div class="flex justify-between items-center">
                             <div class="flex items-center">
@@ -127,102 +127,720 @@
                                 </div>
                                 <div>
                                     <h3 class="font-bold text-lg text-gray-800">Combat Sports</h3>
-                                    <p class="text-gray-600 text-xs">19 weight categories</p>
+                                    <p class="text-gray-600 text-xs">Arnis, Taekwondo</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
-                                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium mr-3">19 Events</span>
                                 <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
                             </div>
                         </div>
                     </button>
                     <div class="sport-content hidden">
                         <div class="p-4 bg-gray-50 border-t border-gray-200">
-                            <div class="mb-6">
-                                <h4 class="font-bold text-gray-700 mb-3 text-lg border-b pb-2">Arnis - Men</h4>
+                            <div class="mb-8">
+                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Arnis</h4>
                                 <div class="overflow-x-auto -mx-2">
                                     <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden">
+                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
                                             <table class="min-w-full divide-y divide-gray-200">
                                                 <thead class="bg-amber-100">
                                                     <tr>
-                                                        <th class="py-3 px-3 text-left font-bold text-gray-700 text-xs sm:text-sm">Category</th>
-                                                        <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Gold</th>
-                                                        <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Silver</th>
-                                                        <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Bronze</th>
+                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
                                                     </tr>
                                                 </thead>
-                                                <!-- Pili ka na lang kung alin mas maganda sa draw -->
                                                 <tbody class="divide-y divide-gray-200 bg-white">
+                                                    <tr class="bg-gray-50">
+                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                                    </tr>
                                                     <tr class="hover:bg-amber-50 transition duration-150">
-                                                        <td class="py-3 px-3 font-medium text-xs sm:text-sm">Fin (50 kg below)</td>
-                                                        <td class="py-3 px-3">
-                                                            <div class="flex flex-col items-center text-center mb-1">
-                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 ca round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                        <td class="py-3 px-4 font-medium text-sm">Fin (50 kg below)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ca round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
                                                                     <span class="text-xs">CA</span>
                                                                 </div>
                                                             </div>
                                                         </td>
-                                                        <td class="py-3 px-3">
+                                                        <td class="py-3 px-4">
                                                             <div class="flex flex-col items-center text-center">
-                                                                <span class="font-medium text-gray-600 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 cet round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
                                                                     <span class="text-xs">CET</span>
                                                                 </div>
                                                             </div>
                                                         </td>
-                                                        <td class="py-3 px-3">
-                                                            <div class="flex flex-col items-center text-center coed rounded-[8px] mb-3 py-1 px-3">
-                                                                <span class="font-medium text-amber-700 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center coed draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
                                                                     <span class="text-xs">COED</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="flex flex-col items-center text-center cet rounded-[8px] py-1 px-3">
-                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                            <div class="flex flex-col items-center text-center cet draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
                                                                     <span class="text-xs">CET</span>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr class="hover:bg-amber-50 transition duration-150">
-                                                        <td class="py-3 px-3 font-medium text-xs sm:text-sm">Bantam (51-55 kg)</td>
-                                                        <td class="py-3 px-3">
+                                                        <td class="py-3 px-4 font-medium text-sm">Bantam (51-55 kg)</td>
+                                                        <td class="py-3 px-4">
                                                             <div class="flex flex-col items-center text-center">
-                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 drt round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
                                                                     <span class="text-xs">DRT</span>
                                                                 </div>
                                                             </div>
                                                         </td>
-                                                        <td class="py-3 px-3">
+                                                        <td class="py-3 px-4">
                                                             <div class="flex flex-col items-center text-center">
-                                                                <span class="font-medium text-gray-600 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 btvc round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
                                                                     <span class="text-xs">BTVC</span>
                                                                 </div>
                                                             </div>
                                                         </td>
-                                                        <td class="py-3 px-3">
-                                                            <div class="flex flex-col items-center text-center mb-3 border-1 border-[#c5c5c5] py-1 px-3 rounded-md">
-                                                                <span class="font-medium text-amber-700 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 ivm round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center ivm draw ">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
                                                                     <span class="text-xs">IVM</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="flex flex-col items-center text-center border-1 border-[#c5c5c5] py-1 px-3 rounded-md">
-                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 ics round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                            <div class="flex flex-col items-center text-center ics draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr class="bg-gray-50">
+                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Fin (40 kg below)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 coed round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ca round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                    <span class="text-xs">CA</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-8">
+                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Taekwondo</h4>
+                                <div class="overflow-x-auto -mx-2">
+                                    <div class="min-w-full inline-block align-middle">
+                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
+                                            <table class="min-w-full divide-y divide-gray-200">
+                                                <thead class="bg-amber-100">
+                                                    <tr>
+                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="divide-y divide-gray-200 bg-white">
+                                                    <tr class="bg-gray-50">
+                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Fly (54-58 kg)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 coed round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ics round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr class="bg-gray-50">
+                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Fin (49 kg below)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ca round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                    <span class="text-xs">CA</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 coed round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sport-section" data-sport="racket">
+                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                    <i class="fas fa-table-tennis text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-800">Racket Sports</h3>
+                                    <p class="text-gray-600 text-xs">Badminton, Table Tennis, Lawn Tennis</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="sport-content hidden">
+                        <div class="p-4 bg-gray-50 border-t border-gray-200">
+                            <div class="mb-8">
+                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Badminton</h4>
+                                <div class="overflow-x-auto -mx-2">
+                                    <div class="min-w-full inline-block align-middle">
+                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
+                                            <table class="min-w-full divide-y divide-gray-200">
+                                                <thead class="bg-amber-100">
+                                                    <tr>
+                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="divide-y divide-gray-200 bg-white">
+                                                    <tr class="bg-gray-50">
+                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Singles</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ca round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                    <span class="text-xs">CA</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center coed draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center cet draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Doubles</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center ivm draw ">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
+                                                                    <span class="text-xs">IVM</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center ics draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr class="bg-gray-50">
+                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Singles</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 coed round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ca round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                    <span class="text-xs">CA</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Doubles</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 coed round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ca round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                    <span class="text-xs">CA</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="bg-gray-50">
+                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Mixed</td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Doubles</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 coed round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ca round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                    <span class="text-xs">CA</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sport-section" data-sport="ball">
+                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="h-10 w-10 rounded-full bg-orange-100 flex items-center justify-center mr-4">
+                                    <i class="fas fa-basketball-ball text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-800">Ball Sports</h3>
+                                    <p class="text-gray-600 text-xs">Basketball, Volleyball, Beach Volleyball, Sepak Takraw</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="sport-content hidden">
+                        <div class="p-4 bg-gray-50 border-t border-gray-200">
+                            <div class="mb-8">
+                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Basketball</h4>
+                                <div class="overflow-x-auto -mx-2">
+                                    <div class="min-w-full inline-block align-middle">
+                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
+                                            <table class="min-w-full divide-y divide-gray-200">
+                                                <thead class="bg-amber-100">
+                                                    <tr>
+                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="divide-y divide-gray-200 bg-white">
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Men</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ca round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                    <span class="text-xs">CA</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cm round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CM_Logo.svg" alt="CM">
+                                                                    <span class="text-xs">CM</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Women</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ics round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sport-section" data-sport="mind">
+                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="h-10 w-10 rounded-full bg-[#f2d1ff] flex items-center justify-center mr-4">
+                                    <i class="fa fa-chess text-[#8100a5]"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-800">Mind & E-Sports</h3>
+                                    <p class="text-gray-600 text-xs">Chess, Mobile Legends</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="sport-content hidden">
+                        <div class="p-4 bg-gray-50 border-t border-gray-200">
+                            <div class="mb-8">
+                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Chess</h4>
+                                <div class="overflow-x-auto -mx-2">
+                                    <div class="min-w-full inline-block align-middle">
+                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
+                                            <table class="min-w-full divide-y divide-gray-200">
+                                                <thead class="bg-amber-100">
+                                                    <tr>
+                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="divide-y divide-gray-200 bg-white">
+                                                    <tr class="bg-gray-50">
+                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Individual</td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Men</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 coed round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ics round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Women</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 coed round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ics round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr class="bg-gray-50">
+                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Team</td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Men</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ca round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                    <span class="text-xs">CA</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 coed round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Women</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                    <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 coed round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
+                                                                    <span class="text-xs">COED</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ics round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
                                                                     <span class="text-xs">ICS</span>
                                                                 </div>
                                                             </div>
@@ -235,47 +853,77 @@
                                 </div>
                             </div>
 
-                            <div class="mb-6">
-                                <h4 class="font-bold text-gray-700 mb-3 text-lg border-b pb-2">Arnis - Women</h4>
+                            <div class="mb-8">
+                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Mobile Legends</h4>
                                 <div class="overflow-x-auto -mx-2">
                                     <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden">
+                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
                                             <table class="min-w-full divide-y divide-gray-200">
                                                 <thead class="bg-amber-100">
                                                     <tr>
-                                                        <th class="py-3 px-3 text-left font-bold text-gray-700 text-xs sm:text-sm">Category</th>
-                                                        <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Gold</th>
-                                                        <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Silver</th>
-                                                        <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Bronze</th>
+                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
+                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody class="divide-y divide-gray-200 bg-white">
                                                     <tr class="hover:bg-amber-50 transition duration-150">
-                                                        <td class="py-3 px-3 font-medium text-xs sm:text-sm">Fin (40 kg below)</td>
-                                                        <td class="py-3 px-3">
+                                                        <td class="py-3 px-4 font-medium text-sm">Men</td>
+                                                        <td class="py-3 px-4">
                                                             <div class="flex flex-col items-center text-center">
-                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 coed round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
-                                                                    <span class="text-xs">COED</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="py-3 px-3">
-                                                            <div class="flex flex-col items-center text-center">
-                                                                <span class="font-medium text-gray-600 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 ca round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ca round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
                                                                     <span class="text-xs">CA</span>
                                                                 </div>
                                                             </div>
                                                         </td>
-                                                        <td class="py-3 px-3">
+                                                        <td class="py-3 px-4">
                                                             <div class="flex flex-col items-center text-center">
-                                                                <span class="font-medium text-amber-700 text-xs sm:text-sm">FName LName</span>
-                                                                <div class="flex items-center justify-center mb-1 cet round">
-                                                                    <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cet round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
                                                                     <span class="text-xs">CET</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 cm round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/CM_Logo.svg" alt="CM">
+                                                                    <span class="text-xs">CM</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Women</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 ics round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -283,344 +931,6 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sport-section" data-sport="badminton">
-                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
-                        <div class="flex justify-between items-center">
-                            <div class="flex items-center">
-                                <div class="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                                    <i class="fas fa-table-tennis text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-lg text-gray-800">Racket Sports</h3>
-                                    <p class="text-gray-600 text-xs">5 events</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium mr-3">5 Events</span>
-                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                            </div>
-                        </div>
-                    </button>
-                    <div class="sport-content hidden">
-                        <div class="p-4 bg-gray-50 border-t border-gray-200">
-                            <div class="overflow-x-auto -mx-2">
-                                <div class="min-w-full inline-block align-middle">
-                                    <div class="overflow-hidden">
-                                        <h4 class="font-bold text-gray-700 mb-3 text-lg border-b pb-2">Badminton - Men</h4>
-                                        <table class="min-w-full divide-y divide-gray-200 mb-6">
-                                            <thead class="bg-amber-100">
-                                                <tr>
-                                                    <th class="py-3 px-3 text-left font-bold text-gray-700 text-xs sm:text-sm">Category</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Gold</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Silver</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Bronze</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="divide-y divide-gray-200 bg-white">
-                                                <tr class="hover:bg-amber-50 transition duration-150">
-                                                    <td class="py-3 px-3 font-medium text-xs sm:text-sm">Men's Singles</td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
-                                                            <div class="flex items-center justify-center mb-1 cet round">
-                                                                <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
-                                                                <span class="text-xs">CET</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <span class="font-medium text-gray-600 text-xs sm:text-sm">FName LName</span>
-                                                            <div class="flex items-center justify-center mb-1 ca round">
-                                                                <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
-                                                                <span class="text-xs">CA</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <span class="font-medium text-amber-700 text-xs sm:text-sm">FName LName</span>
-                                                            <div class="flex items-center justify-center mb-1 coed round">
-                                                                <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
-                                                                <span class="text-xs">COED</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="hover:bg-amber-50 transition duration-150">
-                                                    <td class="py-3 px-3 font-medium text-xs sm:text-sm">Men's Doubles</td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
-                                                            <div class="flex items-center justify-center mb-1 ca round">
-                                                                <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
-                                                                <span class="text-xs">CA</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <span class="font-medium text-gray-600 text-xs sm:text-sm">FName LName</span>
-                                                            <div class="flex items-center justify-center mb-1 cet round">
-                                                                <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
-                                                                <span class="text-xs">CET</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <span class="font-medium text-amber-700 text-xs sm:text-sm">FName LName</span>
-                                                            <div class="flex items-center justify-center mb-1 coed round">
-                                                                <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
-                                                                <span class="text-xs">COED</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                        <h4 class="font-bold text-gray-700 mb-3 text-lg border-b pb-2">Badminton - Women</h4>
-                                        <table class="min-w-full divide-y divide-gray-200">
-                                            <thead class="bg-amber-100">
-                                                <tr>
-                                                    <th class="py-3 px-3 text-left font-bold text-gray-700 text-xs sm:text-sm">Category</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Gold</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Silver</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Bronze</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="divide-y divide-gray-200 bg-white">
-                                                <tr class="hover:bg-amber-50 transition duration-150">
-                                                    <td class="py-3 px-3 font-medium text-xs sm:text-sm">Women's Singles</td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <span class="font-bold text-yellow-600 text-xs sm:text-sm">FName LName</span>
-                                                            <div class="flex items-center justify-center mb-1 cet round">
-                                                                <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
-                                                                <span class="text-xs">CET</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <span class="font-medium text-gray-600 text-xs sm:text-sm">FName LName</span>
-                                                            <div class="flex items-center justify-center mb-1 ca round">
-                                                                <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
-                                                                <span class="text-xs">CA</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <span class="font-medium text-amber-700 text-xs sm:text-sm">FName LName</span>
-                                                            <div class="flex items-center justify-center mb-1 coed round">
-                                                                <img class="h-5 w-5 sm:h-6 sm:w-6 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
-                                                                <span class="text-xs">COED</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sport-section" data-sport="basketball">
-                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
-                        <div class="flex justify-between items-center">
-                            <div class="flex items-center">
-                                <div class="h-10 w-10 rounded-full bg-orange-100 flex items-center justify-center mr-4">
-                                    <i class="fas fa-basketball-ball text-orange-600"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-lg text-gray-800">Ball Sports</h3>
-                                    <p class="text-gray-600 text-xs">2 team events</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium mr-3">2 Events</span>
-                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                            </div>
-                        </div>
-                    </button>
-                    <div class="sport-content hidden">
-                        <div class="p-4 bg-gray-50 border-t border-gray-200">
-                            <div class="overflow-x-auto -mx-2">
-                                <div class="min-w-full inline-block align-middle">
-                                    <div class="overflow-hidden">
-                                        <table class="min-w-full divide-y divide-gray-200">
-                                            <thead class="bg-amber-100">
-                                                <tr>
-                                                    <th class="py-3 px-3 text-left font-bold text-gray-700 text-xs sm:text-sm">Category</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Gold</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Silver</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Bronze</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="divide-y divide-gray-200 bg-white">
-                                                <tr class="hover:bg-amber-50 transition duration-150">
-                                                    <td class="py-3 px-3 font-medium text-xs sm:text-sm">Men's Basketball</td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
-                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">CET</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
-                                                                <span class="font-medium text-gray-600 text-xs sm:text-sm">CA</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
-                                                                <span class="font-medium text-amber-700 text-xs sm:text-sm">COED</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="hover:bg-amber-50 transition duration-150">
-                                                    <td class="py-3 px-3 font-medium text-xs sm:text-sm">Women's Basketball</td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
-                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">CA</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
-                                                                <span class="font-medium text-gray-600 text-xs sm:text-sm">COED</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
-                                                                <span class="font-medium text-amber-700 text-xs sm:text-sm">CET</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sport-section" data-sport="basketball">
-                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
-                        <div class="flex justify-between items-center">
-                            <div class="flex items-center">
-                                <div class="h-10 w-10 rounded-full bg-orange-100 flex items-center justify-center mr-4">
-                                    <i class="fa fa-chess text-orange-600"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-lg text-gray-800">Mind & E-Sports</h3>
-                                    <p class="text-gray-600 text-xs">2 team events</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium mr-3">2 Events</span>
-                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                            </div>
-                        </div>
-                    </button>
-                    <div class="sport-content hidden">
-                        <div class="p-4 bg-gray-50 border-t border-gray-200">
-                            <div class="overflow-x-auto -mx-2">
-                                <div class="min-w-full inline-block align-middle">
-                                    <div class="overflow-hidden">
-                                        <table class="min-w-full divide-y divide-gray-200">
-                                            <thead class="bg-amber-100">
-                                                <tr>
-                                                    <th class="py-3 px-3 text-left font-bold text-gray-700 text-xs sm:text-sm">Category</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Gold</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Silver</th>
-                                                    <th class="py-3 px-3 text-center font-bold text-gray-700 text-xs sm:text-sm">Bronze</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="divide-y divide-gray-200 bg-white">
-                                                <tr class="hover:bg-amber-50 transition duration-150">
-                                                    <td class="py-3 px-3 font-medium text-xs sm:text-sm">Men's Basketball</td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
-                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">CET</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
-                                                                <span class="font-medium text-gray-600 text-xs sm:text-sm">CA</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
-                                                                <span class="font-medium text-amber-700 text-xs sm:text-sm">COED</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="hover:bg-amber-50 transition duration-150">
-                                                    <td class="py-3 px-3 font-medium text-xs sm:text-sm">Women's Basketball</td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CA_Logo.svg" alt="CA">
-                                                                <span class="font-bold text-yellow-600 text-xs sm:text-sm">CA</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/COED_Logo.svg" alt="COED">
-                                                                <span class="font-medium text-gray-600 text-xs sm:text-sm">COED</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="py-3 px-3">
-                                                        <div class="flex flex-col items-center text-center">
-                                                            <div class="flex items-center justify-center mb-1">
-                                                                <img class="h-6 w-6 sm:h-8 sm:w-8 rounded-full mr-1 sm:mr-2" src="../assets/img/CET_Logo.svg" alt="CET">
-                                                                <span class="font-medium text-amber-700 text-xs sm:text-sm">CET</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
                                     </div>
                                 </div>
                             </div>

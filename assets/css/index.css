@@ -50,6 +50,9 @@
     .round {
         @apply rounded-full px-2 py-1 mt-1;
     }
+    .draw {
+        @apply rounded-[8px] px-2 py-1 mt-1 mb-3;
+    }
     .ca {
         @apply text-[#28c936] bg-[#effff0] shadow-md;
     }
@@ -205,5 +208,11 @@
             padding-left: 0.75rem;
             padding-right: 0.75rem;
         }
+    }
+    .men {
+        @apply text-[#0010c2];
+    }
+    .women {
+        @apply text-[#ff43ece7];
     }
 }
