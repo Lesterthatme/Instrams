@@ -3,13 +3,18 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BASC Sports and Development</title>
     <link rel="stylesheet" href="./assets/css/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/index.js" defer></script>
 </head>
+
 <body class="bg-gray-50">
     <nav class="bg-gradient-to-r from-amber-50 to-amber-100 px-[5%] py-3 shadow-lg sticky top-0 z-10">
         <div class="w-full flex justify-between items-center">
@@ -60,17 +65,17 @@
                         <i class="fas fa-trophy text-white text-sm"></i>
                     </div>
                 </div>
-                <div class="flex items-center">
+                <div class="flex items-center" id="total-medal-div">
                     <div class="relative">
-                        <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.svg" alt="CA_Logo">
+                        <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="" alt="no-logo">
                     </div>
                     <div>
-                        <h4 class="font-bold text-lg">College of Agriculture</h4>
+                        <h4 class="font-bold text-lg">No Data</h4>
                         <p class="text-amber-700 font-medium">0 Total Medals</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100 hover:shadow-lg transition duration-300">
                 <div class="flex items-center justify-between mb-4">
                     <h3 class="text-lg font-bold text-gray-800">Most Gold Medals</h3>
@@ -78,10 +83,10 @@
                         <i class="fas fa-medal text-white text-sm"></i>
                     </div>
                 </div>
-                <div class="flex items-center">
-                    <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.svg" alt="CA_Logo">
+                <div class="flex items-center" id="gold-medal-div">
+                    <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="" alt="no-logo">
                     <div>
-                        <h4 class="font-bold text-lg">College of Agriculture</h4>
+                        <h4 class="font-bold text-lg">No data</h4>
                         <p class="text-amber-700 font-medium">0 Gold Medals</p>
                     </div>
                 </div>
@@ -112,7 +117,7 @@
                 </select>
             </div>
         </div>
-        
+
         <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
             <div class="overflow-x-auto">
                 <table class="w-full">
@@ -160,7 +165,7 @@
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
-                        
+
                         <tr class="hover:bg-amber-50 transition duration-150 COED group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
@@ -179,7 +184,7 @@
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
-                        
+
                         <tr class="hover:bg-amber-50 transition duration-150 CET group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
@@ -198,7 +203,7 @@
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
-                        
+
                         <tr class="hover:bg-amber-50 transition duration-150 CM group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
@@ -217,7 +222,7 @@
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
                             <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
-                        
+
                         <tr class="hover:bg-amber-50 transition duration-150 DRT group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
@@ -335,9 +340,9 @@
                 </table>
             </div>
         </section>
-        
+
     </div>
-    
+
     <footer class="bg-gradient-to-r from-amber-50 to-amber-100 border-t border-amber-200 py-6 px-[5%] mt-12">
         <div class="flex flex-col sm:flex-row justify-between items-center">
             <div class="flex sm:flex-row flex-col items-center mb-4 md:mb-0">
@@ -361,6 +366,7 @@
         </div>
     </footer>
 
-    <script src="./assets/js/menu.js"></script>
+
 </body>
+
 </html>

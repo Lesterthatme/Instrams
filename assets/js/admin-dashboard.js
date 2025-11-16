@@ -26,13 +26,13 @@ typeSelect.addEventListener("change", (e) => {
         const category = document.getElementById("category");
         category.length = 1;
         document.getElementById("category-div").classList.remove("d-none");
-
         // console.table(data.data);
         data.data.forEach((item) => {
           const option = document.createElement("option");
           option.value = item.sport_id;
           let tempText = `${item.sport_name} - ${item.sub_category} (${item.gender})`;
           option.text = tempText;
+          option.dataset.multiplier = item.multiplier;
 
           category.appendChild(option);
         });
@@ -112,6 +112,8 @@ saveBtn.addEventListener("click", (e) => {
   //variables
   const type = document.getElementById("type");
   const category = document.getElementById("category");
+  const categorySelected = category.options[category.selectedIndex];
+  const multiplier = categorySelected.dataset.multiplier;
   const goldWinner = document.getElementById("gold-winner");
   const goldParticipant1 = document.getElementById("gold-participant1");
   const goldParticipant2 = document.getElementById("gold-participant1");
@@ -140,6 +142,7 @@ saveBtn.addEventListener("click", (e) => {
   //save na sa object yung mga data
   let formData = {
     category: category.value,
+    multiplier: multiplier,
     goldWinner: goldWinner.value,
     goldParticipant1: goldParticipant1.value,
     goldParticipant2: goldParticipant2.value,
@@ -182,7 +185,7 @@ saveBtn.addEventListener("click", (e) => {
     };
   }
 
-  console.table(formData);
+  // console.table(formData);
 
   //send to fetch api
   (async () => {

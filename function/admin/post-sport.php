@@ -11,6 +11,8 @@ if (isset($data['category'])) {
     try {
         //variables
         $category = $data['category'];
+        $multiplier = $data['multiplier'];
+
         $goldWinner = $data['goldWinner'];
         $goldParticipant1 = $data['goldParticipant1'] ?? '';
         $goldParticipant2 = $data['goldParticipant2'] ?? '';
@@ -32,8 +34,8 @@ if (isset($data['category'])) {
         $medalBronze = "Bronze";
 
         // add medal for gold
-        $stmt1 = $conn->prepare('INSERT INTO medal(insti_id, sport_id, medal_type, participant1, participant2) VALUES (?,?,?,?,?)');
-        $stmt1->bind_param('sssss',  $goldWinner, $category, $medalGold, $goldParticipant1, $goldParticipant2);
+        $stmt1 = $conn->prepare('INSERT INTO medal(insti_id, sport_id, medal_type, multiplier, participant1, participant2) VALUES (?,?,?,?,?,?)');
+        $stmt1->bind_param('ssssss',  $goldWinner, $category, $medalGold, $multiplier, $goldParticipant1, $goldParticipant2);
         if (!$stmt1->execute()) {
             echo json_encode([
                 'success' => false,
@@ -43,8 +45,8 @@ if (isset($data['category'])) {
         }
 
         // add medal for Silver
-        $stmt2 = $conn->prepare('INSERT INTO medal(insti_id, sport_id, medal_type, participant1, participant2) VALUES (?,?,?,?,?)');
-        $stmt2->bind_param('sssss',   $silverWinner, $category, $medalSilver, $silverParticipant1, $silverParticipant2);
+        $stmt2 = $conn->prepare('INSERT INTO medal(insti_id, sport_id, medal_type, multiplier, participant1, participant2) VALUES (?,?,?,?,?,?)');
+        $stmt2->bind_param('ssssss',   $silverWinner, $category, $medalSilver, $multiplier, $silverParticipant1, $silverParticipant2);
         if (!$stmt2->execute()) {
             echo json_encode([
                 'success' => false,
@@ -54,8 +56,8 @@ if (isset($data['category'])) {
         }
 
         if (!empty($bronzeWinner)) {
-            $stmt3 = $conn->prepare('INSERT INTO medal(insti_id, sport_id, medal_type, participant1, participant2) VALUES (?,?,?,?,?)');
-            $stmt3->bind_param('sssss',   $bronzeWinner, $category, $medalBronze, $bronzeParticipant1, $bronzeParticipant2);
+            $stmt3 = $conn->prepare('INSERT INTO medal(insti_id, sport_id, medal_type, multiplier, participant1, participant2) VALUES (?,?,?,?,?,?)');
+            $stmt3->bind_param('ssssss',   $bronzeWinner, $category, $medalBronze, $multiplier, $bronzeParticipant1, $bronzeParticipant2);
             if (!$stmt3->execute()) {
                 echo json_encode([
                     'success' => false,
@@ -66,8 +68,8 @@ if (isset($data['category'])) {
         }
 
         if (!empty($bronzeWinner2)) {
-            $stmt3 = $conn->prepare('INSERT INTO medal(insti_id, sport_id, medal_type, participant1, participant2) VALUES (?,?,?,?,?)');
-            $stmt3->bind_param('sssss',   $bronzeWinner2, $category, $medalBronze, $bronzeParticipant11, $bronzeParticipant22);
+            $stmt3 = $conn->prepare('INSERT INTO medal(insti_id, sport_id, medal_type, multiplier, participant1, participant2) VALUES (?,?,?,?,?,?)');
+            $stmt3->bind_param('ssssss',   $bronzeWinner2, $category, $medalBronze, $multiplier, $bronzeParticipant11, $bronzeParticipant22);
             if (!$stmt3->execute()) {
                 echo json_encode([
                     'success' => false,
