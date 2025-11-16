@@ -66,7 +66,7 @@
                     </div>
                     <div>
                         <h4 class="font-bold text-lg">College of Agriculture</h4>
-                        <p class="text-amber-700 font-medium">133 Total Medals</p>
+                        <p class="text-amber-700 font-medium">0 Total Medals</p>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                     <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="./assets/img/CA_Logo.svg" alt="CA_Logo">
                     <div>
                         <h4 class="font-bold text-lg">College of Agriculture</h4>
-                        <p class="text-amber-700 font-medium">36 Gold Medals</p>
+                        <p class="text-amber-700 font-medium">0 Gold Medals</p>
                     </div>
                 </div>
             </div>
@@ -155,10 +155,10 @@
                                     <span class="font-medium text-sm xs:text-base sm:hidden">CA</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">36</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">57</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">40</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">133</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
                         
                         <tr class="hover:bg-amber-50 transition duration-150 COED group">
@@ -174,10 +174,10 @@
                                     <span class="font-medium text-sm xs:text-base sm:hidden">COED</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">28</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">42</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">35</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">105</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
                         
                         <tr class="hover:bg-amber-50 transition duration-150 CET group">
@@ -193,10 +193,10 @@
                                     <span class="font-medium text-sm xs:text-base sm:hidden">CET</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">25</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">38</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">42</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">105</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
                         
                         <tr class="hover:bg-amber-50 transition duration-150 CM group">
@@ -212,10 +212,10 @@
                                     <span class="font-medium text-sm xs:text-base sm:hidden">CM</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">22</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">30</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">28</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">80</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
                         
                         <tr class="hover:bg-amber-50 transition duration-150 DRT group">
@@ -231,10 +231,10 @@
                                     <span class="font-medium text-sm xs:text-base sm:hidden">DRT</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
 
                         <tr class="hover:bg-amber-50 transition duration-150 BTVC group">
@@ -250,10 +250,10 @@
                                     <span class="font-medium text-sm xs:text-base sm:hidden">BTVC</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
 
                         <tr class="hover:bg-amber-50 transition duration-150 FFHNAS group">
@@ -269,10 +269,10 @@
                                     <span class="font-medium text-sm xs:text-base sm:hidden">FFHNAS</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
 
                         <tr class="hover:bg-amber-50 transition duration-150 IAS group">
@@ -288,10 +288,10 @@
                                     <span class="font-medium text-sm xs:text-base sm:hidden">IAS</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
 
                         <tr class="hover:bg-amber-50 transition duration-150 ICS group">
@@ -307,10 +307,10 @@
                                     <span class="font-medium text-sm xs:text-base sm:hidden">ICS</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
 
                         <tr class="hover:bg-amber-50 transition duration-150 IVM group">
@@ -326,10 +326,10 @@
                                     <span class="font-medium text-sm xs:text-base sm:hidden">IVM</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">18</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">25</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">32</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">75</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">0</td>
+                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">0</td>
                         </tr>
                     </tbody>
                 </table>
