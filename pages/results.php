@@ -225,6 +225,265 @@
                                                             </div>
                                                         </td>
                                                     </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Feather (56–60 kg)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center ivm draw ">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
+                                                                    <span class="text-xs">IVM</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center ics draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Extra Light (61–65 kg)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center ivm draw ">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
+                                                                    <span class="text-xs">IVM</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center ics draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Half Light (66–70 kg)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center ivm draw ">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
+                                                                    <span class="text-xs">IVM</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center ics draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Light (71–75 kg)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center ivm draw ">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
+                                                                    <span class="text-xs">IVM</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center ics draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Half Middle (76–80 kg)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center ivm draw ">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
+                                                                    <span class="text-xs">IVM</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center ics draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Middle (81-85 kg)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center ivm draw ">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
+                                                                    <span class="text-xs">IVM</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center ics draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-amber-50 transition duration-150">
+                                                        <td class="py-3 px-4 font-medium text-sm">Heavy Weight (61–65 kg)</td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-bold text-yellow-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 drt round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/DRT_Logo.svg" alt="DRT">
+                                                                    <span class="text-xs">DRT</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center">
+                                                                <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 btvc round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/BTVC_Logo.svg" alt="BTVC">
+                                                                    <span class="text-xs">BTVC</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="py-3 px-4">
+                                                            <div class="flex flex-col items-center text-center ivm draw ">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/IVM_Logo.svg" alt="IVM">
+                                                                    <span class="text-xs">IVM</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex flex-col items-center text-center ics draw">
+                                                                <span class="font-medium text-amber-700 text-sm">FName LName</span>
+                                                                <div class="flex items-center justify-center mt-1 round">
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/ICS_Logo.svg" alt="ICS">
+                                                                    <span class="text-xs">ICS</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
                                                     
                                                     <tr class="bg-gray-50">
                                                         <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>

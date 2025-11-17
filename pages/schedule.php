@@ -53,54 +53,7 @@
             <h1 class="text-gray-800 text-2xl xs:text-4xl font-bold tracking-tight">BSAU Sportsfest 2025</h1>
         </div>
 
-        <div class="sm:mt-5 mt-0 grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
-            <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100 hover:shadow-lg transition duration-300">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg font-bold text-gray-800">Today's Games</h3>
-                    <div class="h-8 w-8 rounded-full bg-gradient-to-r from-amber-500 to-amber-700 flex items-center justify-center">
-                        <i class="fas fa-calendar-day text-white text-sm"></i>
-                    </div>
-                </div>
-                <div class="space-y-3">
-                    <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-amber-100 hidden">
-                        <div class="flex items-center">
-                            <div class="h-10 w-10 rounded-full bg-amber-100 flex items-center justify-center mr-3">
-                                <i class="fas fa-basketball-ball text-amber-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-sm">Basketball</h4>
-                                <p class="text-xs text-gray-500">Honorato Galvez gym</p>
-                            </div>
-                        </div>
-                        <span class="text-amber-700 font-medium text-sm">AM/PM</span>
-                    </div>
-                    <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-amber-100 hidden">
-                        <div class="flex items-center">
-                            <div class="h-10 w-10 rounded-full bg-amber-100 flex items-center justify-center mr-3">
-                                <i class="fas fa-volleyball-ball text-amber-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-sm">Beach Volleyball</h4>
-                                <p class="text-xs text-gray-500">Beach volley court</p>
-                            </div>
-                        </div>
-                        <span class="text-amber-700 font-medium text-sm">AM/PM</span>
-                    </div>
-                    <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-amber-100">
-                        <div class="flex items-center">
-                            <div class="h-10 w-10 rounded-full bg-amber-100 flex items-center justify-center mr-3" title="No Game">
-                                <i class="fa-solid fa-circle-exclamation text-amber-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-sm">No Data</h4>
-                                <p class="text-xs text-gray-500">--</p>
-                            </div>
-                        </div>
-                        <span class="text-amber-700 font-medium text-sm">--:--</span>
-                    </div>
-                </div>
-            </div>
-
+        <div class="sm:mt-5 mt-0 grid grid-cols-1 gap-5 mb-6">
             <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100 hover:shadow-lg transition duration-300">
                 <div class="flex items-center justify-between mb-4">
                     <h3 class="text-lg font-bold text-gray-800">Key Events</h3>
