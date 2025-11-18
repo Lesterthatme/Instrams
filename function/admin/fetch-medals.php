@@ -95,7 +95,8 @@ FROM medal m
 JOIN institute insti ON m.insti_id = insti.insti_id
 JOIN sport s ON m.sport_id = s.sport_id
 WHERE s.sport_name = ?
-  AND s.gender = ?");
+  AND s.gender = ?
+  ORDER BY s.sub_category");
     $stmt->bind_param('ss', $sport, $gender);
 
     $stmt->execute();
