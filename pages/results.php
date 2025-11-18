@@ -109,652 +109,323 @@
                 </select>
             </div>
         </div>
-
+        
         <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 mb-8">
-            <div class="p-5 border-b border-gray-200">
+            <div class="p-6 border-b border-gray-200 bg-gradient-to-r from-amber-50 to-white">
                 <h2 class="text-lg font-bold text-gray-800">Competition Results</h2>
-                <p class="text-gray-600 mt-1 text-xs">Click on each sport to view detailed results</p>
+                <p class="text-gray-600 mt-2 text-xs">Click on each sport category to view detailed medalists</p>
             </div>
 
-            <div class="divide-y divide-gray-100" id="results-accordion">
-                <!--Combat Sports  -->
+            <div id="results-accordion" class="divide-y divide-gray-200">
+
                 <div class="sport-section" data-sport="combat">
-                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
-                        <div class="flex justify-between items-center">
-                            <div class="flex items-center">
-                                <div class="h-10 w-10 rounded-full bg-red-100 flex items-center justify-center mr-4">
-                                    <i class="fas fa-user-ninja text-red-600"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-lg text-gray-800">Combat Sports</h3>
-                                    <p class="text-gray-600 text-xs">Arnis, Taekwondo</p>
-                                </div>
+                    <button class="sport-header w-full text-left px-6 py-5 flex items-center justify-between hover:bg-amber-50 transition-all duration-300 focus:outline-none">
+                        <div class="flex items-center gap-5">
+                            <div class="h-14 w-14 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 shadow-md">
+                                <i class="fas fa-user-ninja text-red-600 text-2xl"></i>
                             </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Combat Sports</h3>
+                                <p class="text-gray-600 text-xs mt-1">Arnis • Taekwondo</p>
                             </div>
                         </div>
+                        <i class="fas fa-chevron-down text-gray-500 text-xl transition-transform duration-300"></i>
                     </button>
-                    <div class="sport-content hidden">
-                        <div class="p-4 bg-gray-50 border-t border-gray-200">
-
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Arnis</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-
-
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="arnis-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-
-
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="arnis-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                    <div class="sport-content hidden bg-gray-50">
+                        <div class="p-[2%] space-y-4">
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-red-200 inline-block">Arnis</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase tracking-wider">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase tracking-wider">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase tracking-wider">Bronze</th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
+                                        <tbody id="arnis-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
+                                        <tbody id="arnis-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-red-200 inline-block">Taekwondo</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase tracking-wider">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase tracking-wider">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase tracking-wider">Bronze</th>
+                                            </tr>
+                                        </thead>
 
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Taekwondo</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-
-
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="taekwondo-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-
-
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="taekwondo-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
+                                        <tbody id="taekwondo-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
+                                        <tbody id="taekwondo-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- racket -->
                 <div class="sport-section" data-sport="racket">
-                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
-                        <div class="flex justify-between items-center">
-                            <div class="flex items-center">
-                                <div class="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                                    <i class="fas fa-table-tennis text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-lg text-gray-800">Racket Sports</h3>
-                                    <p class="text-gray-600 text-xs">Badminton, Table Tennis, Lawn Tennis</p>
-                                </div>
+                    <button class="sport-header w-full text-left px-6 py-5 flex items-center justify-between hover:bg-amber-50 transition-all duration-300">
+                        <div class="flex items-center gap-5">
+                            <div class="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 shadow-md">
+                                <i class="fas fa-table-tennis text-blue-600 text-2xl"></i>
                             </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Racket Sports</h3>
+                                <p class="text-gray-600 text-xs mt-1">Badminton • Table Tennis • Lawn Tennis</p>
                             </div>
                         </div>
+                        <i class="fas fa-chevron-down text-gray-500 text-xl transition-transform duration-300"></i>
                     </button>
-                    <div class="sport-content hidden">
-                        <div class="p-4 bg-gray-50 border-t border-gray-200">
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Badminton</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Badminton-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Badminton-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Mixed</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Badminton-mixed">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                    <div class="sport-content hidden bg-gray-50">
+                        <div class="p-[2%] space-y-4">
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-blue-200 inline-block">Badminton</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
+                                            </tr>
+                                        </thead>
+                    
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
+                                        <tbody id="Badminton-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
+                                        <tbody id="Badminton-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Mixed</td>
+                                        </tr>
+                                        <tbody id="Badminton-mixed" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
-
-                            <!-- table tennis -->
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Table Tennis</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="TableTennis-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="TableTennis-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Mixed</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="TableTennis-mixed">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-blue-200 inline-block">Table Tennis</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
+                                        <tbody id="TableTennis-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
+                                        <tbody id="TableTennis-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Mixed</td>
+                                        </tr>
+                                        <tbody id="TableTennis-mixed" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
-
-                            <!-- lawn tennis -->
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Lawn Tennis</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="LawnTennis-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="LawnTennis-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-blue-200 inline-block">Lawn Tennis</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
+                                        <tbody id="LawnTennis-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
+                                        <tbody id="LawnTennis-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Ball Sports -->
                 <div class="sport-section" data-sport="ball">
-                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
-                        <div class="flex justify-between items-center">
-                            <div class="flex items-center">
-                                <div class="h-10 w-10 rounded-full bg-orange-100 flex items-center justify-center mr-4">
-                                    <i class="fas fa-basketball-ball text-orange-600"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-lg text-gray-800">Ball Sports</h3>
-                                    <p class="text-gray-600 text-xs">Basketball, Volleyball, Beach Volleyball, Sepak Takraw</p>
-                                </div>
+                    <button class="sport-header w-full text-left px-6 py-5 flex items-center justify-between hover:bg-amber-50 transition-all duration-300">
+                        <div class="flex items-center gap-5">
+                            <div class="h-14 w-14 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0 shadow-md">
+                                <i class="fas fa-basketball-ball text-orange-600 text-2xl"></i>
                             </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Ball Sports</h3>
+                                <p class="text-gray-600 text-xs mt-1">Basketball • Volleyball • Beach Volleyball • Sepak Takraw</p>
                             </div>
                         </div>
+                        <i class="fas fa-chevron-down text-gray-500 text-xl transition-transform duration-300"></i>
                     </button>
-
-                    <div class="sport-content hidden">
-                        <div class="p-4 bg-gray-50 border-t border-gray-200">
-                            <!--basketball  -->
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Basketball</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Basketball-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Basketball-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                    <div class="sport-content hidden bg-gray-50">
+                        <div class="p-[2%] space-y-4">
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-orange-200 inline-block">Basketball</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="Basketball-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        <tbody id="Basketball-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
-                            <!-- volleyball -->
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Volleyball</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Volleyball-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Volleyball-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-orange-200 inline-block">Volleyball</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="Volleyball-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        <tbody id="Volleyball-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
-                            <!-- Beach Volleyball -->
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Beach Volleyball</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="BeachVolleyball-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="BeachVolleyball-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-orange-200 inline-block">Beach Volleyball</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="BeachVolleyball-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        <tbody id="BeachVolleyball-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
-                            <!-- Sepak Takraw -->
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Sepak Takraw</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="SepakTakraw-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="SepakTakraw-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-orange-200 inline-block">Sepak Takraw</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="SepakTakraw-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        <tbody id="SepakTakraw-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- mind and e-sport -->
                 <div class="sport-section" data-sport="mind">
-                    <button class="sport-header w-full text-left p-5 hover:bg-amber-50 transition duration-150">
-                        <div class="flex justify-between items-center">
-                            <div class="flex items-center">
-                                <div class="h-10 w-10 rounded-full bg-[#f2d1ff] flex items-center justify-center mr-4">
-                                    <i class="fa fa-chess text-[#8100a5]"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-lg text-gray-800">Mind & E-Sports</h3>
-                                    <p class="text-gray-600 text-xs">Chess, Mobile Legends</p>
-                                </div>
+                    <button class="sport-header w-full text-left px-6 py-5 flex items-center justify-between hover:bg-amber-50 transition-all duration-300">
+                        <div class="flex items-center gap-5">
+                            <div class="h-14 w-14 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 shadow-md">
+                                <i class="fas fa-chess-knight text-purple-600 text-2xl"></i>
                             </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Mind & E-Sports</h3>
+                                <p class="text-gray-600 text-xs mt-1">Chess • Mobile Legends</p>
                             </div>
                         </div>
+                        <i class="fas fa-chevron-down text-gray-500 text-xl transition-transform duration-300"></i>
                     </button>
-
-
-                    <div class="sport-content hidden">
-                        <div class="p-4 bg-gray-50 border-t border-gray-200">
-
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Chess</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Individual (Men)</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Chess-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Individual (Women)</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Chess-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Team (Men)</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Chess-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Team (Women)</td>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="Chess-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                    <div class="sport-content hidden bg-gray-50">
+                        <div class="p-[2%] space-y-4">
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-purple-200 inline-block">Chess</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="Chess-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        <tbody id="Chess-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
-
-
-                            <div class="mb-8">
-                                <h4 class="font-bold text-gray-700 mb-4 text-xl border-b-2 border-[#c1c1c1] pb-2">Mobile Legends</h4>
-                                <div class="overflow-x-auto -mx-2">
-                                    <div class="min-w-full inline-block align-middle">
-                                        <div class="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
-                                            <table class="min-w-full divide-y divide-gray-200">
-                                                <thead class="bg-amber-100">
-                                                    <tr>
-                                                        <th class="py-3 px-4 text-left font-bold text-gray-700 text-sm w-1/4">Category</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Gold</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Silver</th>
-                                                        <th class="py-3 px-4 text-center font-bold text-gray-700 text-sm w-1/4">Bronze</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-200 bg-white">
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="MobileLegends-men">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                    <tr class="bg-gray-50">
-                                                        <div>
-                                                            <table class="min-w-full divide-y divide-gray-200">
-                                                                <tbody class="divide-y divide-gray-200 bg-white" id="MobileLegends-women">
-
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-2 pb-2 border-b-4 border-purple-200 inline-block">Mobile Legends</h4>
+                                <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gradient-to-r from-amber-100 to-amber-50">
+                                            <tr>
+                                                <th class="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase">Category</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Gold</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Silver</th>
+                                                <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="MobileLegends-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        <tbody id="MobileLegends-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>

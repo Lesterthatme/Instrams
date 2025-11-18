@@ -6,11 +6,11 @@ ini_set('display_errors', 1);
 date_default_timezone_set('Asia/Manila');
 
 $servername = "127.0.0.1";
-$username = "root@";
+$username = "root";
 $password = "";
 $dbname = "instrams";
 
-$conn = new mysqli($servername, $username, $password, $dbname, 3307);
+$conn = new mysqli($servername, $username, $password, $dbname, 3306);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
