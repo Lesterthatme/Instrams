@@ -138,7 +138,7 @@ function callWinners(cate, gender, div) {
         }
       });
 
-    //   console.table(arr);
+      //   console.table(arr);
 
       const tempDiv = document.getElementById(`${div}`);
 
@@ -168,7 +168,9 @@ function callWinners(cate, gender, div) {
                                                             <div class="flex flex-col items-center text-center">
                                                                 <span class="font-bold text-yellow-600 text-sm">FName LName</span>
                                                                 <div class="flex items-center justify-center mt-1 ${item.goldA.toLowerCase()} round">
-                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${item.goldl}" alt="${
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${
+                                                                      item.goldl
+                                                                    }" alt="${
           item.goldA
         }">
                                                                     <span class="text-xs">${
@@ -229,4 +231,15 @@ callWinners("Table Tennis", "Women", "TableTennis-women");
 callWinners("Table Tennis", "Mixed", "TableTennis-mixed");
 callWinners("Lawn Tennis", "Men", "LawnTennis-men");
 callWinners("Lawn Tennis", "Women", "LawnTennis-women");
-
+callWinners("Basketball", "men", "Basketball-men");
+callWinners("Basketball", "Women", "Basketball-women");
+callWinners("Volleyball", "men", "Volleyball-men");
+callWinners("Volleyball", "Women", "Volleyball-women");
+callWinners("Sepak Takraw", "men", "SepakTakraw-men");
+callWinners("Sepak Takraw", "Women", "SepakTakraw-women");
+callWinners("Chess", "Men", "Chess-men");
+callWinners("Chess", "Women", "Chess-women");
+callWinners("Chess", "Men", "Chess-men");
+callWinners("Chess", "Women", "Chess-women");
+callWinners("Mobile Legends", "Men", "MobileLegends-men");
+callWinners("Mobile Legends", "Women", "MobileLegends-women");
