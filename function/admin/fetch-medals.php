@@ -65,6 +65,48 @@ ORDER BY totalGold DESC,
 
     echo json_encode(['success' => true, 'message' => 'success', 'data' => $sports]);
     exit;
+} else if ($type == 'games') {
+
+    $stmt = $conn->prepare("SELECT COUNT(sport_id) AS totalEvents FROM sport");
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $sports = [];
+    while ($row = $result->fetch_assoc()) {
+        $sports[] = $row;
+    }
+    //send back 
+
+    echo json_encode(['success' => true, 'message' => 'success', 'data' => $sports]);
+    exit;
+} else if ($type == 'category') {
+    $sport = $_GET['sport'] ?? null;
+    $gender = $_GET['gender'] ?? null;
+
+    $stmt = $conn->prepare("SELECT 
+    s.sub_category,
+    insti.insti_id,
+    insti.inti_name,
+     insti.logo,
+    insti.acronym,
+    s.sport_id,
+    s.sport_name,
+    m.medal_type
+FROM medal m
+JOIN institute insti ON m.insti_id = insti.insti_id
+JOIN sport s ON m.sport_id = s.sport_id
+WHERE s.sport_name = ?
+  AND s.gender = ?");
+    $stmt->bind_param('ss', $sport, $gender);
+
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $sports = [];
+    while ($row = $result->fetch_assoc()) {
+        $sports[] = $row;
+    }
+
+    echo json_encode(['success' => true, 'message' => 'success', 'data' => $sports]);
+    exit;
 } else {
     echo json_encode(['success' => false, 'message' => 'Something went wrong. Please try again later.']);
     exit;
