@@ -145,16 +145,22 @@
                                                 <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase tracking-wider">Bronze</th>
                                             </tr>
                                         </thead>
-                                        
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
                                         </tr>
-                                        <tbody id="arnis-men" class="bg-white divide-y divide-gray-200"></tbody>
-                                        
+                                        <tbody id="arnis-men" class="bg-white divide-y divide-gray-200">
+
+
+                                        </tbody>
+
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
                                         </tr>
-                                        <tbody id="arnis-women" class="bg-white divide-y divide-gray-200"></tbody>
+                                        <tbody id="arnis-women" class="bg-white divide-y divide-gray-200">
+
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>
@@ -171,12 +177,12 @@
                                             </tr>
                                         </thead>
 
-                                        
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
                                         </tr>
                                         <tbody id="taekwondo-men" class="bg-white divide-y divide-gray-200"></tbody>
-                                        
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
                                         </tr>
@@ -215,17 +221,17 @@
                                                 <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
                                             </tr>
                                         </thead>
-                    
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
                                         </tr>
                                         <tbody id="Badminton-men" class="bg-white divide-y divide-gray-200"></tbody>
-                                        
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
                                         </tr>
                                         <tbody id="Badminton-women" class="bg-white divide-y divide-gray-200"></tbody>
-                                        
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Mixed</td>
                                         </tr>
@@ -245,17 +251,17 @@
                                                 <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
                                             </tr>
                                         </thead>
-                                        
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
                                         </tr>
                                         <tbody id="TableTennis-men" class="bg-white divide-y divide-gray-200"></tbody>
-                                        
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
                                         </tr>
                                         <tbody id="TableTennis-women" class="bg-white divide-y divide-gray-200"></tbody>
-                                        
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Mixed</td>
                                         </tr>
@@ -275,12 +281,12 @@
                                                 <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
                                             </tr>
                                         </thead>
-                                        
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
                                         </tr>
                                         <tbody id="LawnTennis-men" class="bg-white divide-y divide-gray-200"></tbody>
-                                        
+
                                         <tr class="bg-gray-50">
                                             <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
                                         </tr>

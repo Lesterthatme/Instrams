@@ -116,10 +116,10 @@ saveBtn.addEventListener("click", (e) => {
   const multiplier = categorySelected.dataset.multiplier;
   const goldWinner = document.getElementById("gold-winner");
   const goldParticipant1 = document.getElementById("gold-participant1");
-  const goldParticipant2 = document.getElementById("gold-participant1");
+  const goldParticipant2 = document.getElementById("gold-participant2");
   const silverWinner = document.getElementById("silver-winner");
   const silverParticipant1 = document.getElementById("silver-participant1");
-  const silverParticipant2 = document.getElementById("silver-participant1");
+  const silverParticipant2 = document.getElementById("silver-participant2");
 
   let bronzeWinner = document.getElementById("bronze-winner")
     ? document.getElementById("bronze-winner").value
@@ -158,7 +158,7 @@ saveBtn.addEventListener("click", (e) => {
 
   if (bronzeWinner != "none") {
     bronzeParticipant1 = document.getElementById("bronze-participant1");
-    bronzeParticipant2 = document.getElementById("bronze-participant1");
+    bronzeParticipant2 = document.getElementById("bronze-participant2");
 
     //spread operator
     formData = {
