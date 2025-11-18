@@ -272,7 +272,7 @@
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
                                     <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" 
-                                    src="assets/img/${item.logo}" alt="${item.acronym}logo">
+                                    src="https://bascsdo.site/assets/img/${item.logo}" alt="${item.acronym}logo">
                                     <span class="font-medium text-sm xs:text-base hidden sm:block">${item.inti_name}</span>
                                     <span class="font-medium text-sm xs:text-base sm:hidden">${item.acronym}</span>
                                 </div>
@@ -306,7 +306,7 @@ function numbering(num) {
                                 </div>`;
     default:
       return `<div class="flex items-center">
-                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">${num}</span>
                                 </div>`;
   }
 }

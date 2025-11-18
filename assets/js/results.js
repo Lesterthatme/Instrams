@@ -159,7 +159,7 @@ function callWinners(cate, gender, div) {
                    item.bPar11
                  }, ${item.bPar22}</span>
                                                                 <div class="flex items-center justify-center mt-1 ${item.BronzeAa.toLowerCase()} round">
-                                                                    <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${
                                                                       item.Bronzela
                                                                     }" alt="${
             item.BronzeAa
@@ -175,7 +175,7 @@ function callWinners(cate, gender, div) {
                 <div class="flex flex-col items-center text-center">
                             <span class="font-medium text-gray-600 text-sm">${item.bPar1}, ${item.bPar2}</span>
                             <div class="flex items-center justify-center mt-1 ${item.BronzeA} round">
-                                <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${item.Bronzel}" alt="${item.BronzeA}">
+                                <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${item.Bronzel}" alt="${item.BronzeA}">
                                 <span class="text-xs">${item.BronzeA}</span>
                             </div>
                         </div>
@@ -191,7 +191,7 @@ function callWinners(cate, gender, div) {
                     <div class="flex flex-col items-center text-center">
                         <span class="font-bold text-yellow-600 text-sm">${item.gPar1}, ${item.gPar2}</span>
                         <div class="flex items-center justify-center mt-1 ${item.goldA} round">
-                            <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${item.goldl}" alt="${item.goldA}">
+                            <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${item.goldl}" alt="${item.goldA}">
                                 <span class="text-xs">${item.goldA}</span>
                             </div>
                         </div>
@@ -200,7 +200,7 @@ function callWinners(cate, gender, div) {
                         <div class="flex flex-col items-center text-center">
                             <span class="font-medium text-gray-600 text-sm">${item.sPar1}, ${item.sPar2}</span>
                             <div class="flex items-center justify-center mt-1 ${item.SilverA} round">
-                                <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${item.Silverl}" alt="${item.SilverA}">
+                                <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${item.Silverl}" alt="${item.SilverA}">
                                 <span class="text-xs">${item.SilverA}</span>
                             </div>
                         </div>
