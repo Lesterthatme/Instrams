@@ -657,7 +657,29 @@
                             <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
                         </tr>
 
-                        <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="All Venues">
+                        <tr class="schedule-row hover:bg-[#ffdcdc] transition duration-150" data-day="nov20" data-venue="Multi purpose Gym">
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex flex-col">
+                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="text-gray-500 text-xs">Thursday</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-start flex-col">
+                                    <span class="font-medium text-sm xs:text-base">Badminton</span>
+                                    <span class="text-[#ff5d5d] text-xs">No Games-Gym used for Cong Cholo payout</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                    <span class="text-sm xs:text-base">Multi purpose Gym</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                        </tr>
+
+                        <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="Honorato Galvez Gym">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex flex-col">
                                     <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
@@ -666,16 +688,164 @@
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">NO GAMES- Gym used for Cong Cholo payout</span>
+                                    <span class="font-medium text-sm xs:text-base">Basketball (Men/Women)</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">All Venues</span>
+                                    <span class="text-sm xs:text-base">Honorato Galvez Gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">--:--</td>
+                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                        </tr>
+
+                        <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="Main campus beach volley court">
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex flex-col">
+                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="text-gray-500 text-xs">Thursday</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <span class="font-medium text-sm xs:text-base">Beach Volleyball</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                    <span class="text-sm xs:text-base">Main campus beach volley court</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                        </tr>
+
+                        <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="College Library">
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex flex-col">
+                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="text-gray-500 text-xs">Thursday</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <span class="font-medium text-sm xs:text-base">Chess</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                    <span class="text-sm xs:text-base">College Library</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                        </tr>
+
+                        <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="New site tennis court">
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex flex-col">
+                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="text-gray-500 text-xs">Thursday</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <span class="font-medium text-sm xs:text-base">Lawn Tennis</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                    <span class="text-sm xs:text-base">New site tennis court</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                        </tr>
+
+                        <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="Main campus multi function hall">
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex flex-col">
+                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="text-gray-500 text-xs">Thursday</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <span class="font-medium text-sm xs:text-base">Mobile Legend</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                    <span class="text-sm xs:text-base">Main campus multi function hall</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                        </tr>
+
+                        <tr class="schedule-row hover:bg-[#ffdcdc] transition duration-150" data-day="nov20" data-venue="Multi purpose Gym">
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex flex-col">
+                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="text-gray-500 text-xs">Thursday</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-start flex-col">
+                                    <span class="font-medium text-sm xs:text-base">Sepak Takraw</span>
+                                    <span class="text-[#ff5d5d] text-xs">No Games-Gym used for Cong Cholo payout</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                    <span class="text-sm xs:text-base">Multi purpose Gym</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                        </tr>
+
+                        <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="Cayetano Hall">
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex flex-col">
+                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="text-gray-500 text-xs">Thursday</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <span class="font-medium text-sm xs:text-base">Table Tennis</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                    <span class="text-sm xs:text-base">Cayetano Hall</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                        </tr>
+
+                        <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="BASC main covered court">
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex flex-col">
+                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="text-gray-500 text-xs">Thursday</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <span class="font-medium text-sm xs:text-base">Badminton</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                    <span class="text-sm xs:text-base">BASC main covered court</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
                         </tr>
 
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov21" data-venue="Multi purpose gym">
