@@ -109,7 +109,7 @@
                 </select>
             </div>
         </div>
-        
+
         <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 mb-8">
             <div class="p-6 border-b border-gray-200 bg-gradient-to-r from-amber-50 to-white">
                 <h2 class="text-lg font-bold text-gray-800">Competition Results</h2>
