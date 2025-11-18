@@ -102,7 +102,7 @@ function callWinners(cate, gender, div) {
 
     if (data.success) {
       //pumapasok
-    //   console.table(data.data);
+      //   console.table(data.data);
       let counter = -1;
       let hasBronze = 0;
       data.data.forEach((item) => {
@@ -146,7 +146,7 @@ function callWinners(cate, gender, div) {
         }
       });
 
-    //   console.table(arr);
+      //   console.table(arr);
 
       const tempDiv = document.getElementById(`${div}`);
 
