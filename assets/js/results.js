@@ -227,4 +227,6 @@ callWinners("Badminton", "Mixed", "Badminton-mixed");
 callWinners("Table Tennis", "Men", "TableTennis-men");
 callWinners("Table Tennis", "Women", "TableTennis-women");
 callWinners("Table Tennis", "Mixed", "TableTennis-mixed");
+callWinners("Lawn Tennis", "Men", "LawnTennis-men");
+callWinners("Lawn Tennis", "Women", "LawnTennis-women");
 
