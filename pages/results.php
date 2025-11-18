@@ -319,7 +319,15 @@
                                                 <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
                                             </tr>
                                         </thead>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
                                         <tbody id="Basketball-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
                                         <tbody id="Basketball-women" class="bg-white divide-y divide-gray-200"></tbody>
                                     </table>
                                 </div>
@@ -336,7 +344,15 @@
                                                 <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
                                             </tr>
                                         </thead>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
                                         <tbody id="Volleyball-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
                                         <tbody id="Volleyball-women" class="bg-white divide-y divide-gray-200"></tbody>
                                     </table>
                                 </div>
@@ -353,7 +369,15 @@
                                                 <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
                                             </tr>
                                         </thead>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
                                         <tbody id="BeachVolleyball-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
                                         <tbody id="BeachVolleyball-women" class="bg-white divide-y divide-gray-200"></tbody>
                                     </table>
                                 </div>
@@ -370,7 +394,15 @@
                                                 <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
                                             </tr>
                                         </thead>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
                                         <tbody id="SepakTakraw-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
                                         <tbody id="SepakTakraw-women" class="bg-white divide-y divide-gray-200"></tbody>
                                     </table>
                                 </div>
@@ -406,7 +438,15 @@
                                                 <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
                                             </tr>
                                         </thead>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
                                         <tbody id="Chess-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
                                         <tbody id="Chess-women" class="bg-white divide-y divide-gray-200"></tbody>
                                     </table>
                                 </div>
@@ -423,10 +463,18 @@
                                                 <th class="px-6 py-4 text-center text-xs font-bold text-gray-700 uppercase">Bronze</th>
                                             </tr>
                                         </thead>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Men</td>
+                                        </tr>
                                         <tbody id="MobileLegends-men" class="bg-white divide-y divide-gray-200"></tbody>
+                                        
+                                        <tr class="bg-gray-50">
+                                            <td colspan="4" class="py-2 px-4 font-bold text-gray-800 text-sm">Women</td>
+                                        </tr>
                                         <tbody id="MobileLegends-women" class="bg-white divide-y divide-gray-200"></tbody>
                                     </table>
-                                </div>
+                                </div>  
                             </div>
                         </div>
                     </div>
@@ -434,6 +482,8 @@
 
             </div>
         </section>
+
+
     </div>
 
     <footer class="bg-gradient-to-r from-amber-50 to-amber-100 border-t border-amber-200 py-6 px-[5%] mt-12">
