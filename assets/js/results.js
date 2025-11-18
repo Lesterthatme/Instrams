@@ -119,11 +119,15 @@ function callWinners(cate, gender, div) {
             gold: item.medal_type,
             goldA: item.acronym,
             goldl: item.logo,
+            gPar1: item.participant1,
+            gPar2: item.participant2,
           });
         } else if (item.medal_type == "Silver") {
           arr[counter][item.medal_type] = item.medal_type;
           arr[counter][`${item.medal_type}A`] = item.acronym;
           arr[counter][`${item.medal_type}l`] = item.logo;
+          arr[counter]["sPar1"] = item.participant1;
+          arr[counter]["sPar2"] = item.participant2;
         } else if (hasBronze == 0 && item.medal_type == "Bronze") {
           if (item.medal_type == "Bronze") {
             hasBronze = 1;
@@ -131,7 +135,11 @@ function callWinners(cate, gender, div) {
           arr[counter][item.medal_type] = item.medal_type;
           arr[counter][`${item.medal_type}A`] = item.acronym;
           arr[counter][`${item.medal_type}l`] = item.logo;
+          arr[counter]["bPar1"] = item.participant1;
+          arr[counter]["bPar2"] = item.participant2;
         } else if (hasBronze == 1 && item.medal_type == "Bronze") {
+          arr[counter]["bPar11"] = item.participant1;
+          arr[counter]["bPar22"] = item.participant2;
           arr[counter][`${item.medal_type}a`] = item.medal_type;
           arr[counter][`${item.medal_type}Aa`] = item.acronym;
           arr[counter][`${item.medal_type}la`] = item.logo;
@@ -144,9 +152,12 @@ function callWinners(cate, gender, div) {
 
       arr.forEach((item) => {
         let tempBronze = ``;
+        let tempBronzeFirst = ``;
         if (item.Bronzea) {
           tempBronze = `
-                 <span class="font-medium text-gray-600 text-sm">FName LName</span>
+                 <span class="font-medium text-gray-600 text-sm">${
+                   item.bPar11
+                 }, ${item.bPar22}</span>
                                                                 <div class="flex items-center justify-center mt-1 ${item.BronzeAa.toLowerCase()} round">
                                                                     <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${
                                                                       item.Bronzela
@@ -159,44 +170,43 @@ function callWinners(cate, gender, div) {
                                                                 </div>
             `;
         }
-        tempDiv.innerHTML += `
-            <tr class="hover:bg-amber-50 transition duration-150">
-                <td class="py-3 px-4 font-medium text-sm">${item.cat}</td>
-                <td class="py-3 px-4">
-                    <div class="flex flex-col items-center text-center">
-                        <span class="font-bold text-yellow-600 text-sm">FName LName</span>
-                        <div class="flex items-center justify-center mt-1 ${item.goldA} round">
-                            <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${
-                              item.goldl
-                            }" alt="${item.goldA}">
-                                <span class="text-xs">${item.goldA}</span>
-                            </div>
-                        </div>
-                </td>
-                <td class="py-3 px-4">
-                        <div class="flex flex-col items-center text-center">
-                            <span class="font-medium text-gray-600 text-sm">FName LName</span>
-                            <div class="flex items-center justify-center mt-1 ${item.SilverA} round">
-                                <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${
-                                  item.Silverl
-                                }" alt="${item.SilverA}">
-                                <span class="text-xs">${item.SilverA}</span>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="py-3 px-4">
-                        <div class="flex flex-col items-center text-center">
-                            <span class="font-medium text-gray-600 text-sm">FName LName</span>
+        if (item.Bronze) {
+          tempBronzeFirst = `
+                <div class="flex flex-col items-center text-center">
+                            <span class="font-medium text-gray-600 text-sm">${item.bPar1}, ${item.bPar2}</span>
                             <div class="flex items-center justify-center mt-1 ${item.BronzeA} round">
-                                <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${
-                                  item.Bronzel
-                                }" alt="${item.BronzeA}">
+                                <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${item.Bronzel}" alt="${item.BronzeA}">
                                 <span class="text-xs">${item.BronzeA}</span>
                             </div>
                         </div>
                         <div class="flex flex-col items-center text-center">
                             ${tempBronze}
                         </div>
+            `;
+        }
+        tempDiv.innerHTML += `
+            <tr class="hover:bg-amber-50 transition duration-150">
+                <td class="py-3 px-4 font-medium text-sm">${item.cat}</td>
+                <td class="py-3 px-4">
+                    <div class="flex flex-col items-center text-center">
+                        <span class="font-bold text-yellow-600 text-sm">${item.gPar1}, ${item.gPar2}</span>
+                        <div class="flex items-center justify-center mt-1 ${item.goldA} round">
+                            <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${item.goldl}" alt="${item.goldA}">
+                                <span class="text-xs">${item.goldA}</span>
+                            </div>
+                        </div>
+                </td>
+                <td class="py-3 px-4">
+                        <div class="flex flex-col items-center text-center">
+                            <span class="font-medium text-gray-600 text-sm">${item.sPar1}, ${item.sPar2}</span>
+                            <div class="flex items-center justify-center mt-1 ${item.SilverA} round">
+                                <img class="h-5 w-5 rounded-full mr-2" src="../assets/img/${item.Silverl}" alt="${item.SilverA}">
+                                <span class="text-xs">${item.SilverA}</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-3 px-4">
+                        ${tempBronzeFirst}
                     </td>
                 </tr>
         `;

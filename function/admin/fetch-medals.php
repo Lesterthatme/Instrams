@@ -90,7 +90,9 @@ ORDER BY totalGold DESC,
     insti.acronym,
     s.sport_id,
     s.sport_name,
-    m.medal_type
+    m.medal_type,
+    m.participant1,
+    m.participant2
 FROM medal m
 JOIN institute insti ON m.insti_id = insti.insti_id
 JOIN sport s ON m.sport_id = s.sport_id
