@@ -33,6 +33,18 @@ if (isset($data['category'])) {
         $medalSilver = "Silver";
         $medalBronze = "Bronze";
 
+        $stmt = $conn->prepare('SELECT has_done from sport WHERE sport_id = ? AND has_done = "1"');
+        $stmt->bind_param('s', $category);
+        $stmt->execute();
+        $result1 = $stmt->get_result();
+        if ($result1->num_rows > 0) {
+            echo json_encode([
+                'success' => false,
+                'message' => 'Sport Already Recorded.'
+            ]);
+            exit;
+        }
+
         // add medal for gold
         $stmt1 = $conn->prepare('INSERT INTO medal(insti_id, sport_id, medal_type, multiplier, participant1, participant2) VALUES (?,?,?,?,?,?)');
         $stmt1->bind_param('ssssss',  $goldWinner, $category, $medalGold, $multiplier, $goldParticipant1, $goldParticipant2);

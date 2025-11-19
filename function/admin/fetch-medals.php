@@ -100,7 +100,7 @@ WHERE s.sport_name = ?
   AND s.gender = ?
 ORDER BY 
     
-    m.medal_id asc;");
+    m.medal_id asc");
     $stmt->bind_param('ss', $sport, $gender);
 
     $stmt->execute();
