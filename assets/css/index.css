@@ -216,3 +216,21 @@
         @apply text-[#ff43ece7];
     }
 }
+
+.carousel-container {
+    animation: scroll 30s linear infinite;
+    width: max-content;
+}
+
+.carousel-track {
+    display: flex;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
