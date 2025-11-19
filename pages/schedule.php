@@ -2,7 +2,6 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="../assets/css/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body class="bg-gray-50">
     <nav class="bg-gradient-to-r from-amber-50 to-amber-100 px-[5%] py-3 shadow-lg sticky top-0 z-20">
         <div class="w-full flex justify-between items-center">
@@ -42,21 +40,20 @@
             </ul>
         </div>
     </nav>
-
     <div class="md:px-[8%] sm:px-[4%] px-[1%] min-h-screen py-6">
         <div class="sm:hidden block">
             <div class="flex items-center justify-center">
-                <div class="flex items-center justify-cente h-40 w-200"><img src="../assets/img/BSAU_Sportsfest.svg" alt="BSAU_Sportsfest"></div>
+                <div class="flex items-center justify-center h-40 w-200"><img src="../assets/img/BSAU_Sportsfest.svg" alt="BSAU_Sportsfest"></div>
             </div>
         </div>
         <div class="items-center justify-start sm:block hidden">
-            <h1 class="text-gray-800 text-2xl xs:text-4xl font-bold tracking-tight">BSAU Sportsfest 2025</h1>
+            <h1 class="text-gray-800 text-2xl xs:text-3xl font-bold tracking-tight">BSAU Sportsfest 2025</h1>
         </div>
-        
+       
         <div class="mt-0 mb-2 relative overflow-hidden">
             <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
             <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
-            
+           
             <div class="carousel-container flex space-x-8 py-2">
                 <div class="carousel-track flex space-x-8">
                     <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
@@ -90,7 +87,6 @@
                         <img src="../assets/img/ivm.svg" alt="IVM Logo" class="max-w-full max-h-full object-contain">
                     </div>
                 </div>
-                
                 <div class="carousel-track flex space-x-8">
                     <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
                         <img src="../assets/img/ca.svg" alt="CA Logo" class="max-w-full max-h-full object-contain">
@@ -125,7 +121,6 @@
                 </div>
             </div>
         </div>
-
         <div class="sm:mt-5 mt-0 grid grid-cols-1 gap-5 mb-6">
             <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100 hover:shadow-lg transition duration-300">
                 <div class="flex items-center justify-between mb-4">
@@ -165,7 +160,6 @@
                 </div>
             </div>
         </div>
-
         <div class="py-3 flex flex-col md:flex-row justify-between items-start md:items-center mb-6 bg-gradient-to-r from-white to-amber-50 rounded-2xl p-5 shadow-sm border border-amber-100">
             <div class="flex flex-col items-start mb-4 md:mb-0">
                 <span class="text-amber-700 text-sm xs:text-xl font-medium mt-1 bg-amber-100 px-3 py-1 rounded-full">Game Schedule</span>
@@ -185,790 +179,765 @@
                 </select>
             </div>
         </div>
-
         <section class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 mb-8">
             <div class="overflow-x-auto">
                 <table class="w-full">
                     <thead class="bg-gradient-to-r from-amber-50 to-amber-100">
                         <tr>
-                            <th class="py-4 px-4 xs:px-6 text-left font-bold text-gray-700 text-sm xs:text-base">Date</th>
-                            <th class="py-4 px-4 xs:px-6 text-left font-bold text-gray-700 text-sm xs:text-base">Sport</th>
-                            <th class="py-4 px-4 xs:px-6 text-left font-bold text-gray-700 text-sm xs:text-base">Venue</th>
-                            <th class="py-4 px-4 xs:px-6 text-left font-bold text-gray-700 text-sm xs:text-base">Time</th>
+                            <th class="py-4 px-2 sm:px-4 xs:px-3 text-left font-bold text-gray-700 text-xs sm:text-base">Date</th>
+                            <th class="py-4 px-4 sm:px-6 text-left font-bold text-gray-700 text-xs sm:text-base">Sport</th>
+                            <th class="py-4 px-4 sm:px-6 text-left font-bold text-gray-700 text-xs sm:text-base">Venue</th>
+                            <th class="py-4 px-4 sm:px-6 text-left font-bold text-gray-700 text-xs sm:text-base">Time</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-100" id="schedule-table-body">
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov17" data-venue="Multi purpose gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 17</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 17</span>
                                     <span class="text-gray-500 text-xs">Monday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Mr. & Ms Intrams</span>
+                                    <span class="font-medium text-xs sm:text-base">Mr. & Ms Intrams</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Multi purpose gym</span>
+                                    <span class="text-xs sm:text-base">Multi purpose gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">Opening</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">Opening</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov17" data-venue="Honorato Galvez gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 17</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 17</span>
                                     <span class="text-gray-500 text-xs">Monday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Basketball (Men/Women)</span>
+                                    <span class="font-medium text-xs sm:text-base">Basketball (Men/Women)</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Honorato Galvez gym</span>
+                                    <span class="text-xs sm:text-base">Honorato Galvez gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov17" data-venue="Main campus beach volley court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 17</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 17</span>
                                     <span class="text-gray-500 text-xs">Monday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Beach Volleyball</span>
+                                    <span class="font-medium text-xs sm:text-base">Beach Volleyball</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Main campus beach volley court</span>
+                                    <span class="text-xs sm:text-base">Main campus beach volley court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov17" data-venue="College Library">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 17</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 17</span>
                                     <span class="text-gray-500 text-xs">Monday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Chess</span>
+                                    <span class="font-medium text-xs sm:text-base">Chess</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">College Library</span>
+                                    <span class="text-xs sm:text-base">College Library</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov17" data-venue="New site tennis court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 17</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 17</span>
                                     <span class="text-gray-500 text-xs">Monday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Lawn Tennis</span>
+                                    <span class="font-medium text-xs sm:text-base">Lawn Tennis</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">New site tennis court</span>
+                                    <span class="text-xs sm:text-base">New site tennis court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov17" data-venue="Main campus multi function hall">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 17</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 17</span>
                                     <span class="text-gray-500 text-xs">Monday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Mobile Legends</span>
+                                    <span class="font-medium text-xs sm:text-base">Mobile Legends</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Main campus multi function hall</span>
+                                    <span class="text-xs sm:text-base">Main campus multi function hall</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov17" data-venue="Multi purpose gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 17</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 17</span>
                                     <span class="text-gray-500 text-xs">Monday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Sepak Takraw</span>
+                                    <span class="font-medium text-xs sm:text-base">Sepak Takraw</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Multi purpose gym</span>
+                                    <span class="text-xs sm:text-base">Multi purpose gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov17" data-venue="BASC main covered court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 17</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 17</span>
                                     <span class="text-gray-500 text-xs">Monday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Volleyball (Men/Women)</span>
+                                    <span class="font-medium text-xs sm:text-base">Volleyball (Men/Women)</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">BASC main covered court</span>
+                                    <span class="text-xs sm:text-base">BASC main covered court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov18" data-venue="Multi purpose gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 18</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 18</span>
                                     <span class="text-gray-500 text-xs">Tuesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Arnis</span>
+                                    <span class="font-medium text-xs sm:text-base">Arnis</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Multi purpose gym</span>
+                                    <span class="text-xs sm:text-base">Multi purpose gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov18" data-venue="Honorato Galvez gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 18</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 18</span>
                                     <span class="text-gray-500 text-xs">Tuesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Basketball (Men/Women)</span>
+                                    <span class="font-medium text-xs sm:text-base">Basketball (Men/Women)</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Honorato Galvez gym</span>
+                                    <span class="text-xs sm:text-base">Honorato Galvez gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov18" data-venue="Main campus beach volley court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 18</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 18</span>
                                     <span class="text-gray-500 text-xs">Tuesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Beach Volleyball</span>
+                                    <span class="font-medium text-xs sm:text-base">Beach Volleyball</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Main campus beach volley court</span>
+                                    <span class="text-xs sm:text-base">Main campus beach volley court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov18" data-venue="College Library">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 18</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 18</span>
                                     <span class="text-gray-500 text-xs">Tuesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Chess</span>
+                                    <span class="font-medium text-xs sm:text-base">Chess</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">College Library</span>
+                                    <span class="text-xs sm:text-base">College Library</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov18" data-venue="New site tennis court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 18</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 18</span>
                                     <span class="text-gray-500 text-xs">Tuesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Lawn Tennis</span>
+                                    <span class="font-medium text-xs sm:text-base">Lawn Tennis</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">New site tennis court</span>
+                                    <span class="text-xs sm:text-base">New site tennis court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov18" data-venue="Main campus multi function hall">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 18</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 18</span>
                                     <span class="text-gray-500 text-xs">Tuesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Mobile Legend</span>
+                                    <span class="font-medium text-xs sm:text-base">Mobile Legend</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Main campus multi function hall</span>
+                                    <span class="text-xs sm:text-base">Main campus multi function hall</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov18" data-venue="Cayetano hall">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 18</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 18</span>
                                     <span class="text-gray-500 text-xs">Tuesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Table Tennis</span>
+                                    <span class="font-medium text-xs sm:text-base">Table Tennis</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Cayetano hall</span>
+                                    <span class="text-xs sm:text-base">Cayetano hall</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov18" data-venue="Multi purpose gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 18</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 18</span>
                                     <span class="text-gray-500 text-xs">Tuesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Taekwondo</span>
+                                    <span class="font-medium text-xs sm:text-base">Taekwondo</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Multi purpose gym</span>
+                                    <span class="text-xs sm:text-base">Multi purpose gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov18" data-venue="BASC main covered court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 18</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 18</span>
                                     <span class="text-gray-500 text-xs">Tuesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Volleyball (Men/Women)</span>
+                                    <span class="font-medium text-xs sm:text-base">Volleyball (Men/Women)</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">BASC main covered court</span>
+                                    <span class="text-xs sm:text-base">BASC main covered court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
-
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov19" data-venue="Honorato Galvez gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 19</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 19</span>
                                     <span class="text-gray-500 text-xs">Wednesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Basketball (Men/Women)</span>
+                                    <span class="font-medium text-xs sm:text-base">Basketball (Men/Women)</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Honorato Galvez gym</span>
+                                    <span class="text-xs sm:text-base">Honorato Galvez gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov19" data-venue="Multi purpose gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 19</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 19</span>
                                     <span class="text-gray-500 text-xs">Wednesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Badminton</span>
+                                    <span class="font-medium text-xs sm:text-base">Badminton</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Multi purpose gym</span>
+                                    <span class="text-xs sm:text-base">Multi purpose gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-                        <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov19" data-venue="Main campus  beach volley court">
-                            <td class="py-4 px-4 xs:px-6">
+                        <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov19" data-venue="Main campus beach volley court">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 19</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 19</span>
                                     <span class="text-gray-500 text-xs">Wednesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Beach Volleyball</span>
+                                    <span class="font-medium text-xs sm:text-base">Beach Volleyball</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Main campus beach volley court</span>
+                                    <span class="text-xs sm:text-base">Main campus beach volley court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov19" data-venue="College Library">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 19</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 19</span>
                                     <span class="text-gray-500 text-xs">Wednesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Chess</span>
+                                    <span class="font-medium text-xs sm:text-base">Chess</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">College Library</span>
+                                    <span class="text-xs sm:text-base">College Library</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov19" data-venue="New site tennis court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 19</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 19</span>
                                     <span class="text-gray-500 text-xs">Wednesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Lawn Tennis</span>
+                                    <span class="font-medium text-xs sm:text-base">Lawn Tennis</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">New site tennis court</span>
+                                    <span class="text-xs sm:text-base">New site tennis court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov19" data-venue="Main campus multi function hall">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 19</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 19</span>
                                     <span class="text-gray-500 text-xs">Wednesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Mobile Legend</span>
+                                    <span class="font-medium text-xs sm:text-base">Mobile Legend</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Main campus multi function hall</span>
+                                    <span class="text-xs sm:text-base">Main campus multi function hall</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov19" data-venue="Multi purpose gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 19</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 19</span>
                                     <span class="text-gray-500 text-xs">Wednesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Sepak Takraw</span>
+                                    <span class="font-medium text-xs sm:text-base">Sepak Takraw</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Multi purpose gym</span>
+                                    <span class="text-xs sm:text-base">Multi purpose gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov19" data-venue="Cayetano hall">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 19</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 19</span>
                                     <span class="text-gray-500 text-xs">Wednesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Table Tennis</span>
+                                    <span class="font-medium text-xs sm:text-base">Table Tennis</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Cayetano hall</span>
+                                    <span class="text-xs sm:text-base">Cayetano hall</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov19" data-venue="BASC main covered court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 19</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 19</span>
                                     <span class="text-gray-500 text-xs">Wednesday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Volleyball (Men/Women)</span>
+                                    <span class="font-medium text-xs sm:text-base">Volleyball (Men/Women)</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">BASC main covered court</span>
+                                    <span class="text-xs sm:text-base">BASC main covered court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-[#ffdcdc] transition duration-150" data-day="nov20" data-venue="Multi purpose Gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
-                                    <span class="text-gray-500 text-xs">Thursday</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 20</span>
+                                    <span class="240text-gray-500 text-xs">Thursday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-start flex-col">
-                                    <span class="font-medium text-sm xs:text-base">Badminton</span>
+                                    <span class="font-medium text-xs sm:text-base">Badminton</span>
                                     <span class="text-[#ff5d5d] text-xs">No Games-Gym used for Cong Cholo payout</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Multi purpose Gym</span>
+                                    <span class="text-xs sm:text-base">Multi purpose Gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="Honorato Galvez Gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 20</span>
                                     <span class="text-gray-500 text-xs">Thursday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Basketball (Men/Women)</span>
+                                    <span class="font-medium text-xs sm:text-base">Basketball (Men/Women)</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Honorato Galvez Gym</span>
+                                    <span class="text-xs sm:text-base">Honorato Galvez Gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="Main campus beach volley court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 20</span>
                                     <span class="text-gray-500 text-xs">Thursday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Beach Volleyball</span>
+                                    <span class="font-medium text-xs sm:text-base">Beach Volleyball</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Main campus beach volley court</span>
+                                    <span class="text-xs sm:text-base">Main campus beach volley court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="College Library">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 20</span>
                                     <span class="text-gray-500 text-xs">Thursday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Chess</span>
+                                    <span class="font-medium text-xs sm:text-base">Chess</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">College Library</span>
+                                    <span class="text-xs sm:text-base">College Library</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="New site tennis court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 20</span>
                                     <span class="text-gray-500 text-xs">Thursday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Lawn Tennis</span>
+                                    <span class="font-medium text-xs sm:text-base">Lawn Tennis</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">New site tennis court</span>
+                                    <span class="text-xs sm:text-base">New site tennis court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="Main campus multi function hall">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 20</span>
                                     <span class="text-gray-500 text-xs">Thursday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Mobile Legend</span>
+                                    <span class="font-medium text-xs sm:text-base">Mobile Legend</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Main campus multi function hall</span>
+                                    <span class="text-xs sm:text-base">Main campus multi function hall</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-[#ffdcdc] transition duration-150" data-day="nov20" data-venue="Multi purpose Gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 20</span>
                                     <span class="text-gray-500 text-xs">Thursday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-start flex-col">
-                                    <span class="font-medium text-sm xs:text-base">Sepak Takraw</span>
+                                    <span class="font-medium text-xs sm:text-base">Sepak Takraw</span>
                                     <span class="text-[#ff5d5d] text-xs">No Games-Gym used for Cong Cholo payout</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Multi purpose Gym</span>
+                                    <span class="text-xs sm:text-base">Multi purpose Gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="Cayetano Hall">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 20</span>
                                     <span class="text-gray-500 text-xs">Thursday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Table Tennis</span>
+                                    <span class="font-medium text-xs sm:text-base Ashe">Table Tennis</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Cayetano Hall</span>
+                                    <span class="text-xs sm:text-base">Cayetano Hall</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov20" data-venue="BASC main covered court">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 20</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 20</span>
                                     <span class="text-gray-500 text-xs">Thursday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Badminton</span>
+                                    <span class="font-medium text-xs sm:text-base">Badminton</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">BASC main covered court</span>
+                                    <span class="text-xs sm:text-base">BASC main covered court</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM/PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM/PM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov21" data-venue="Multi purpose gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 21</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 21</span>
                                     <span class="text-gray-500 text-xs">Friday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Awarding Ceremony</span>
+                                    <span class="font-medium text-xs sm:text-base">Awarding Ceremony</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Multi purpose gym</span>
+                                    <span class="text-xs sm:text-base">Multi purpose gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">AM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">AM</td>
                         </tr>
-
                         <tr class="schedule-row hover:bg-amber-50 transition duration-150" data-day="nov21" data-venue="Multi purpose gym">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex flex-col">
-                                    <span class="font-semibold text-gray-800 text-sm xs:text-base">Nov 21</span>
+                                    <span class="font-semibold text-gray-800 text-xs sm:text-base">Nov 21</span>
                                     <span class="text-gray-500 text-xs">Friday</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <span class="font-medium text-sm xs:text-base">Cheerdance Competition</span>
+                                    <span class="font-medium text-xs sm:text-base">Cheerdance Competition</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
                                     <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
-                                    <span class="text-sm xs:text-base">Multi purpose gym</span>
+                                    <span class="text-xs sm:text-base">Multi purpose gym</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-sm xs:text-base">PM</td>
+                            <td class="py-4 px-4 sm:px-6 text-xs sm:text-base">PM</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
-
     </div>
-
     <footer class="bg-gradient-to-r from-amber-50 to-amber-100 border-t border-amber-200 py-6 px-[5%] mt-12">
         <div class="flex flex-col sm:flex-row justify-between items-center">
             <div class="flex sm:flex-row flex-col items-center mb-4 md:mb-0">
@@ -987,13 +956,11 @@
                 </a>
             </div>
             <div class="text-gray-600 text-sm text-center md:text-right">
-                <p>&copy; 2025 BSAU Sportsfest. All rights reserved.</p>
+                <p>© 2025 BSAU Sportsfest. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/js/schedule.js"></script>
 </body>
-
 </html>
