@@ -47,7 +47,7 @@
         </div>
     </nav>
 
-    <div class="md:px-[8%] sm:px-[4%] px-[2%] min-h-screen py-6">
+    <div class="md:px-[8%] sm:px-[4%] px-[1%] min-h-screen py-6">
         <div class="sm:hidden block">
             <div class="flex items-center justify-center ">
                 <div class="flex items-center justify-center h-40 w-200"><img src="./assets/img/BSAU_Sportsfest.svg" alt="BSAU_Sportsfest"></div>
