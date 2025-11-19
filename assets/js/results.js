@@ -155,19 +155,33 @@ function callWinners(cate, gender, div) {
         let tempBronzeFirst = ``;
         if (item.Bronzea) {
           tempBronze = `
-                 <span class="font-medium text-gray-600 text-xs">${item.bPar11}, ${item.bPar22}</span>
+                 <span class="font-medium text-gray-600 text-xs">${
+                   item.bPar11
+                 }${item.bPar22 ? ", " + item.bPar22 : ""}</span>
                                                                 <div class="flex items-center justify-center mt-1 ${item.BronzeAa.toLowerCase()} round">
-                                                                    <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${item.Bronzela}" alt="${item.BronzeAa}">
-                                                                    <span class="text-xs">${item.BronzeAa}</span>
+                                                                    <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${
+                                                                      item.Bronzela
+                                                                    }" alt="${
+            item.BronzeAa
+          }">
+                                                                    <span class="text-xs">${
+                                                                      item.BronzeAa
+                                                                    }</span>
                                                                 </div>
             `;
         }
         if (item.Bronze) {
           tempBronzeFirst = `
                 <div class="flex flex-col items-center text-center">
-                            <span class="font-medium text-gray-600 text-xs">${item.bPar1}, ${item.bPar2}</span>
-                            <div class="flex items-center justify-center mt-1 ${item.BronzeA} round">
-                                <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${item.Bronzel}" alt="${item.BronzeA}">
+                            <span class="font-medium text-gray-600 text-xs">${
+                              item.bPar1
+                            }${item.bPar2 ? ", " + item.bPar2 : ""}</span>
+                            <div class="flex items-center justify-center mt-1 ${
+                              item.BronzeA
+                            } round">
+                                <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${
+                                  item.Bronzel
+                                }" alt="${item.BronzeA}">
                                 <span class="text-xs">${item.BronzeA}</span>
                             </div>
                         </div>
@@ -181,18 +195,30 @@ function callWinners(cate, gender, div) {
                 <td class="py-3 px-4 font-medium text-xs">${item.cat}</td>
                 <td class="py-3 px-4">
                     <div class="flex flex-col items-center text-center">
-                        <span class="font-bold text-yellow-600 text-xs">${item.gPar1}, ${item.gPar2}</span>
-                        <div class="flex items-center justify-center mt-1 ${item.goldA} round">
-                            <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${item.goldl}" alt="${item.goldA}">
+                        <span class="font-bold text-yellow-600 text-xs">${
+                          item.gPar1
+                        }${item.gPar2 ? ", " + item.gPar2: ""}</span>
+                        <div class="flex items-center justify-center mt-1 ${
+                          item.goldA
+                        } round">
+                            <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${
+                              item.goldl
+                            }" alt="${item.goldA}">
                                 <span class="text-xs">${item.goldA}</span>
                             </div>
                         </div>
                 </td>
                 <td class="py-3 px-4">
                         <div class="flex flex-col items-center text-center">
-                            <span class="font-medium text-gray-600 text-xs">${item.sPar1}, ${item.sPar2}</span>
-                            <div class="flex items-center justify-center mt-1 ${item.SilverA} round">
-                                <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${item.Silverl}" alt="${item.SilverA}">
+                            <span class="font-medium text-gray-600 text-xs">${
+                              item.sPar1
+                            }${item.sPar2 ? ", " + item.sPar2: ""}</span>
+                            <div class="flex items-center justify-center mt-1 ${
+                              item.SilverA
+                            } round">
+                                <img class="h-5 w-5 rounded-full mr-2" src="https://bascsdo.site/assets/img/${
+                                  item.Silverl
+                                }" alt="${item.SilverA}">
                                 <span class="text-xs">${item.SilverA}</span>
                             </div>
                         </div>
