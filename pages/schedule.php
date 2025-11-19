@@ -12,7 +12,7 @@
 </head>
 
 <body class="bg-gray-50">
-    <nav class="bg-gradient-to-r from-amber-50 to-amber-100 px-[5%] py-3 shadow-lg sticky top-0 z-10">
+    <nav class="bg-gradient-to-r from-amber-50 to-amber-100 px-[5%] py-3 shadow-lg sticky top-0 z-20">
         <div class="w-full flex justify-between items-center">
             <div class="flex items-center justify-center font-bold gap-3">
                 <div class="relative">
@@ -46,7 +46,7 @@
     <div class="md:px-[8%] sm:px-[4%] px-[1%] min-h-screen py-6">
         <div class="sm:hidden block">
             <div class="flex items-center justify-center">
-                <div class="flex items-center justify-center h-40 w-100"><img src="../assets/img/BSAU_Sportsfest.svg" alt="BSAU_Sportsfest"></div>
+                <div class="flex items-center justify-cente h-40 w-200"><img src="../assets/img/BSAU_Sportsfest.svg" alt="BSAU_Sportsfest"></div>
             </div>
         </div>
         <div class="items-center justify-start sm:block hidden">

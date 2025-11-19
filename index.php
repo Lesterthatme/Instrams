@@ -16,7 +16,7 @@
 </head>
 
 <body class="bg-gray-50">
-    <nav class="bg-gradient-to-r from-amber-50 to-amber-100 px-[5%] py-3 shadow-lg sticky top-0 z-10">
+    <nav class="bg-gradient-to-r from-amber-50 to-amber-100 px-[5%] py-3 shadow-lg sticky top-0 z-20">
         <div class="w-full flex justify-between items-center">
             <div class="flex items-center justify-center font-bold gap-3">
                 <div class="relative">
