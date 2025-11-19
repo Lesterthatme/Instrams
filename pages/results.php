@@ -55,6 +55,79 @@
         <div class="items-center justify-start sm:block hidden">
             <h1 class="text-gray-800 text-2xl xs:text-3xl font-bold tracking-tight">BSAU Sportsfest 2025</h1>
         </div>
+        
+        <div class="mt-0 mb-2 relative overflow-hidden">
+            <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
+            
+            <div class="carousel-container flex space-x-8 py-2">
+                <div class="carousel-track flex space-x-8">
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/ca.svg" alt="CA Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/coed.svg" alt="COED Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/cet.svg" alt="CET Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/cm.svg" alt="CM Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/drt.svg" alt="DRT Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/btvc.svg" alt="BTVC Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/ffhnas.svg" alt="FFHNAS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/ias.svg" alt="IAS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/ics.svg" alt="ICS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/ivm.svg" alt="IVM Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                </div>
+                
+                <div class="carousel-track flex space-x-8">
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/ca.svg" alt="CA Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/coed.svg" alt="COED Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/cet.svg" alt="CET Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/cm.svg" alt="CM Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/drt.svg" alt="DRT Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/btvc.svg" alt="BTVC Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/ffhnas.svg" alt="FFHNAS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/ias.svg" alt="IAS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/ics.svg" alt="ICS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="../assets/img/ivm.svg" alt="IVM Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="sm:mt-5 mt-0 grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
             <div class="bg-gradient-to-br from-white to-amber-50 p-5 rounded-2xl shadow-md border border-amber-100">

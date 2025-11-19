@@ -47,14 +47,87 @@
         </div>
     </nav>
 
-    <div class="md:px-[8%] sm:px-[5%] px-[3%] min-h-screen py-6">
+    <div class="md:px-[8%] sm:px-[4%] px-[2%] min-h-screen py-6">
         <div class="sm:hidden block">
-            <div class="flex items-center justify-center mb-1">
-                <div class="flex items-center justify-center h-40 w-100"><img src="./assets/img/BSAU_Sportsfest.svg" alt="BSAU_Sportsfest"></div>
+            <div class="flex items-center justify-center ">
+                <div class="flex items-center justify-center h-40 w-200"><img src="./assets/img/BSAU_Sportsfest.svg" alt="BSAU_Sportsfest"></div>
             </div>
         </div>
         <div class="items-center justify-start sm:block hidden">
             <h1 class="text-gray-800 text-2xl xs:text-3xl font-bold tracking-tight">BSAU Sportsfest 2025</h1>
+        </div>
+
+        <div class="mt-0 mb-2 relative overflow-hidden">
+            <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
+            
+            <div class="carousel-container flex space-x-8 py-2">
+                <div class="carousel-track flex space-x-8">
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/ca.svg" alt="CA Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/coed.svg" alt="COED Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/cet.svg" alt="CET Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/cm.svg" alt="CM Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/drt.svg" alt="DRT Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/btvc.svg" alt="BTVC Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/ffhnas.svg" alt="FFHNAS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/ias.svg" alt="IAS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/ics.svg" alt="ICS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/ivm.svg" alt="IVM Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                </div>
+                
+                <div class="carousel-track flex space-x-8">
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/ca.svg" alt="CA Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/coed.svg" alt="COED Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/cet.svg" alt="CET Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/cm.svg" alt="CM Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/drt.svg" alt="DRT Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/btvc.svg" alt="BTVC Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/ffhnas.svg" alt="FFHNAS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/ias.svg" alt="IAS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/ics.svg" alt="ICS Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                        <img src="./assets/img/ivm.svg" alt="IVM Logo" class="max-w-full max-h-full object-contain">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="sm:mt-5 mt-0 grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
@@ -123,27 +196,27 @@
                 <table class="w-full">
                     <thead class="bg-gradient-to-r from-amber-50 to-amber-100">
                         <tr>
-                            <th class="py-4 px-4 xs:px-6 text-left font-bold text-gray-700 text-sm xs:text-base">Rank</th>
-                            <th class="py-4 px-4 xs:px-6 text-left font-bold text-gray-700 text-sm xs:text-base">Institute</th>
-                            <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">
+                            <th class="py-4 px-2 sm:px-4 xs:px-3 text-left font-bold text-gray-700 text-xs sm:text-base">Rank</th>
+                            <th class="py-4 px-4 sm:px-6 text-left font-bold text-gray-700 text-xs sm:text-base">Institute</th>
+                            <th class="py-4 px-3 sm:px-6 text-center font-bold text-gray-700 text-xs sm:text-base">
                                 <div class="flex items-center justify-center">
                                     <i class="fas fa-medal text-yellow-500 mr-2"></i>
                                     <span class="xs:inline">Gold</span>
                                 </div>
                             </th>
-                            <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">
+                            <th class="py-4 px-3 sm:px-6 text-center font-bold text-gray-700 text-xs sm:text-base">
                                 <div class="flex items-center justify-center">
                                     <i class="fas fa-medal text-gray-400 mr-2"></i>
                                     <span class="xs:inline">Silver</span>
                                 </div>
                             </th>
-                            <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">
+                            <th class="py-4 px-3 sm:px-6 text-center font-bold text-gray-700 text-xs sm:text-base">
                                 <div class="flex items-center justify-center">
                                     <i class="fas fa-medal text-amber-700 mr-2"></i>
                                     <span class="xs:inline">Bronze</span>
                                 </div>
                             </th>
-                            <th class="py-4 px-4 xs:px-6 text-center font-bold text-gray-700 text-sm xs:text-base">Total</th>
+                            <th class="py-4 px-4 sm:px-6 text-center font-bold text-gray-700 text-xs sm:text-base">Total</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-100" id="ranking-div">

@@ -13,11 +13,11 @@
       data.data.forEach((item) => {
         totalMedalDiv.innerHTML = `
         <div class="relative">
-                        <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" 
+                        <img class="h-11 sm:h-14 w-11 sm:w-14 rounded-full mr-2 sm:mr-4 border-2 border-amber-300 shadow" 
                         src="assets/img/${item.logo}" alt="no-logo">
                     </div>
                     <div>
-                        <h4 class="font-bold text-lg">${item.inti_name}</h4>
+                        <h4 class="font-bold text-md sm:text-lg">${item.inti_name}</h4>
                         <p class="text-amber-700 font-medium">${item.totalMedal} Total Medals</p>
                     </div>
         `;
@@ -40,9 +40,9 @@
       //   console.table(data.data);
       data.data.forEach((item) => {
         goldMedalDiv.innerHTML = `
-         <img class="h-14 w-14 rounded-full mr-4 border-2 border-amber-300 shadow" src="assets/img/${item.logo}" alt="no-logo">
+         <img class="h-11 sm:h-14 w-11 sm:w-14 rounded-full mr-2 sm:mr-4 border-2 border-amber-300 shadow" src="assets/img/${item.logo}" alt="no-logo">
                      <div>
-                       <h4 class="font-bold text-lg">${item.inti_name}</h4>
+                       <h4 class="font-bold text-md sm:text-lg">${item.inti_name}</h4>
                          <p class="text-amber-700 font-medium">${item.totalGold} Gold Medals</p>
                     </div>
         `;
@@ -164,7 +164,7 @@
                         <tr class="hover:bg-amber-50 transition duration-150 BTVC group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">6</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6">
@@ -183,7 +183,7 @@
                         <tr class="hover:bg-amber-50 transition duration-150 FFHNAS group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">7</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6">
@@ -202,7 +202,7 @@
                         <tr class="hover:bg-amber-50 transition duration-150 IAS group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">8</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6">
@@ -221,7 +221,7 @@
                         <tr class="hover:bg-amber-50 transition duration-150 ICS group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">9</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6">
@@ -240,7 +240,7 @@
                         <tr class="hover:bg-amber-50 transition duration-150 IVM group">
                             <td class="py-4 px-4 xs:px-6">
                                 <div class="flex items-center">
-                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">5</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">10</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 xs:px-6">
@@ -264,23 +264,23 @@
         let tempRanking = numbering(counter);
         rankingDiv.innerHTML += `
             <tr class="hover:bg-amber-50 transition duration-150 ${item.bg_color} group">
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-2 sm:px-4 xs:px-3">
                                 <div class="flex items-center">
                                     ${tempRanking}
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6">
+                            <td class="py-4 px-4 sm:px-6">
                                 <div class="flex items-center">
-                                    <img class="h-9 w-9 xs:h-10 xs:w-10 rounded-full mr-3 xs:mr-4 border-2 border-white shadow" 
+                                    <img class="h-8 w-8 sm:h-10 sm:w-10 rounded-full mr-2 sm:mr-4 border-2 border-white shadow" 
                                     src="https://bascsdo.site/assets/img/${item.logo}" alt="${item.acronym}logo">
-                                    <span class="font-medium text-sm xs:text-base hidden sm:block">${item.inti_name}</span>
-                                    <span class="font-medium text-sm xs:text-base sm:hidden">${item.acronym}</span>
+                                    <span class="font-medium text-xs sm:text-base hidden sm:block">${item.inti_name}</span>
+                                    <span class="font-medium text-xs sm:text-base sm:hidden">${item.acronym}</span>
                                 </div>
                             </td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-yellow-600 text-sm xs:text-base">${item.totalGold}</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-500 text-sm xs:text-base">${item.totalSilver}</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-amber-700 text-sm xs:text-base">${item.totalBronze}</td>
-                            <td class="py-4 px-4 xs:px-6 text-center font-bold text-gray-800 text-sm xs:text-base">${item.total}</td>
+                            <td class="py-4 px-3 sm:px-6 text-center font-bold text-yellow-600 text-xs sm:text-base">${item.totalGold}</td>
+                            <td class="py-4 px-3 sm:px-6 text-center font-bold text-gray-500 text-xs sm:text-base">${item.totalSilver}</td>
+                            <td class="py-4 px-3 sm:px-6 text-center font-bold text-amber-700 text-xs sm:text-base">${item.totalBronze}</td>
+                            <td class="py-4 px-4 sm:px-6 text-center font-bold text-gray-800 text-xs sm:text-base">${item.total}</td>
                         </tr>
         `;
       });
@@ -293,20 +293,20 @@
 function numbering(num) {
   switch (num) {
     case 1:
-      return `<span class="bg-gradient-to-br from-yellow-500 to-yellow-600 text-white rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm group-hover:scale-110 transition duration-200">1</span>`;
+      return `<span class="bg-gradient-to-br from-yellow-500 to-yellow-600 text-white rounded-full h-6 w-6 sm:h-8 sm:w-8 flex items-center justify-center font-bold text-xs sm:text-base shadow-sm group-hover:scale-110 transition duration-200">1</span>`;
 
     case 2:
-      return ` <span class="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm group-hover:scale-110 transition duration-200">2</span>`;
+      return ` <span class="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-full h-6 w-6 sm:h-8 sm:w-8 flex items-center justify-center font-bold text-xs sm:text-base shadow-sm group-hover:scale-110 transition duration-200">2</span>`;
     case 3:
       return `
-      <span class="bg-gradient-to-br from-amber-700 to-amber-800 text-white rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm group-hover:scale-110 transition duration-200">3</span>`;
+      <span class="bg-gradient-to-br from-amber-700 to-amber-800 text-white rounded-full h-6 w-6 sm:h-8 sm:w-8 flex items-center justify-center font-bold text-xs sm:text-base shadow-sm group-hover:scale-110 transition duration-200">3</span>`;
     case 4:
       return ` <div class="flex items-center">
-                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">4</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-6 w-6 sm:h-8 sm:w-8 flex items-center justify-center font-bold text-xs sm:text-base shadow-sm">4</span>
                                 </div>`;
     default:
       return `<div class="flex items-center">
-                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-7 w-7 xs:h-8 xs:w-8 flex items-center justify-center font-bold text-sm xs:text-base shadow-sm">${num}</span>
+                                    <span class="bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 rounded-full h-6 w-6 sm:h-8 sm:w-8 flex items-center justify-center font-bold text-xs sm:text-base shadow-sm">${num}</span>
                                 </div>`;
   }
 }

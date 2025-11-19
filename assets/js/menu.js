@@ -94,3 +94,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselContainer = document.querySelector('.carousel-container');
+    
+    if (carouselContainer) {
+        carouselContainer.addEventListener('animationiteration', function() {
+        });
+    }
+});
