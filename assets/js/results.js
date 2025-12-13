@@ -197,7 +197,7 @@ function callWinners(cate, gender, div) {
                     <div class="flex flex-col items-center text-center">
                         <span class="font-bold text-yellow-600 text-xs">${
                           item.gPar1
-                        }${item.gPar2 ? ", " + item.gPar2: ""}</span>
+                        }${item.gPar2 ? ", " + item.gPar2 : ""}</span>
                         <div class="flex items-center justify-center mt-1 ${
                           item.goldA
                         } round">
@@ -212,7 +212,7 @@ function callWinners(cate, gender, div) {
                         <div class="flex flex-col items-center text-center">
                             <span class="font-medium text-gray-600 text-xs">${
                               item.sPar1
-                            }${item.sPar2 ? ", " + item.sPar2: ""}</span>
+                            }${item.sPar2 ? ", " + item.sPar2 : ""}</span>
                             <div class="flex items-center justify-center mt-1 ${
                               item.SilverA
                             } round">
@@ -245,11 +245,13 @@ callWinners("Table Tennis", "Women", "TableTennis-women");
 callWinners("Table Tennis", "Mixed", "TableTennis-mixed");
 callWinners("Lawn Tennis", "Men", "LawnTennis-men");
 callWinners("Lawn Tennis", "Women", "LawnTennis-women");
-callWinners("Basketball", "men", "Basketball-men");
+callWinners("Basketball", "Men", "Basketball-men");
 callWinners("Basketball", "Women", "Basketball-women");
-callWinners("Volleyball", "men", "Volleyball-men");
+callWinners("Volleyball", "Men", "Volleyball-men");
 callWinners("Volleyball", "Women", "Volleyball-women");
-callWinners("Sepak Takraw", "men", "SepakTakraw-men");
+callWinners("Beach Volleyball", "Men", "BeachVolleyball-men");
+callWinners("Beach Volleyball", "Women", "BeachVolleyball-women");
+callWinners("Sepak Takraw", "Men", "SepakTakraw-men");
 callWinners("Sepak Takraw", "Women", "SepakTakraw-women");
 callWinners("Chess", "Men", "Chess-men");
 callWinners("Chess", "Women", "Chess-women");
