@@ -22,8 +22,19 @@ function hideModal() {
   }, 200);
 }
 
+//Save Button
 document.getElementById("save-btn").addEventListener("click", (e) => {
   e.preventDefault();
 
-  alert("not yet implemented");
+  alert("Save button is not yet implemented");
+});
+
+//Delete Button
+const deleteBtn = document.querySelectorAll(".delete-btn");
+deleteBtn.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    alert("Delete function not implemented yet");
+  });
 });
