@@ -18,110 +18,79 @@ if (!isset($_SESSION['admin_logged_in'])) {
     <title>Add Winners - BASC Sports Admin</title>
     <link rel="stylesheet" href="../assets/css/output.css">
     <script defer src="../assets/js/admin-dashboard.js"></script>
+    <script src="../assets/js/sidebar.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        .sidebar {
-            transition: transform 0.3s ease;
-        }
-        @media (min-width: 768px) {
-            .sidebar-collapsed {
-                transform: translateX(-100%);
-            }
-            .sidebar-expanded {
-                transform: translateX(0);
-            }
-            .admin-main-expanded {
-                margin-left: 16rem;
-            }
-            .admin-main-collapsed {
-                margin-left: 0;
-            }
-        }
-        @media (max-width: 767px) {
-            .sidebar {
-                transform: translateX(-100%);
-            }
-            .sidebar-mobile-open {
-                transform: translateX(0);
-            }
-        }
-    </style>
 </head>
 
-<body class="bg-gray-50 min-h-screen">
-    <div id="sidebar" class="sidebar fixed top-0 left-0 h-screen w-64 bg-gradient-to-b from-amber-50 to-amber-100 shadow-xl z-30 md:translate-x-0">
-        <div class="p-6 border-b border-amber-200">
-            <h2 class="text-xl font-bold text-gray-800">Admin Panel</h2>
-            <p class="text-gray-600 text-sm">Sports Development Office</p>
-        </div>
-        
-        <nav class="p-4">
-            <ul class="space-y-2">
-                <li>
-                    <a href="admin-dashboard.php" class="flex items-center p-3 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition duration-200">
-                        <i class="fas fa-tachometer-alt mr-3"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="add-winners.php" class="flex items-center p-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-md">
-                        <i class="fas fa-trophy mr-3"></i>
-                        <span>Add Winners</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center p-3 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition duration-200">
-                        <i class="fas fa-users mr-3"></i>
-                        <span>Add Participants</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center p-3 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition duration-200">
-                        <i class="fas fa-calendar-alt mr-3"></i>
-                        <span>Schedule</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center p-3 rounded-xl text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition duration-200">
-                        <i class="fas fa-medal mr-3"></i>
-                        <span>Results</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        
-        <div class="absolute bottom-0 w-full p-4 border-t border-amber-200">
-            <button id="logout-btn" class="w-full flex items-center justify-center p-3 rounded-xl bg-gradient-to-r from-red-500 to-red-600 text-white shadow-md hover:from-red-600 hover:to-red-700 transition duration-200">
-                <i class="fas fa-sign-out-alt mr-3"></i>
-                <span>Logout</span>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <header class="header bg-amber-50 p-4 fixed top-0 left-0 right-0 z-50 h-[70px] flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <button class="menu-toggle p-2 rounded-lg md:hidden hover:bg-[#ffd7b2]" id="menuToggle">
+                <i class="fas fa-bars text-gray-700"></i>
             </button>
+            <button class="sidebar-toggle p-2 rounded-lg hidden md:block hover:bg-[#ffd7b2]" id="sidebarToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2b2b2bff">
+                    <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm240-80h400v-480H400v480Zm-80 0v-480H160v480h160Zm-160 0v-480 480Zm160 0h80-80Zm0-480h80-80Z"/>
+                </svg>
+            </button>
+            
+            <div class="logo flex items-center gap-3">
+                <img class="h-12 w-12 rounded-full object-cover" src="../assets/img/BASC_sports_development_office.png" alt="BASC Logo">
+                <span class="logo-text font-bold text-gray-800 whitespace-nowrap hidden md:block">BASC Sports Development Office</span>
+                <span class="logo-text font-bold text-gray-800 whitespace-nowrap md:hidden">BASC Sports</span>
+            </div>
         </div>
-    </div>
-
-    <div id="main-content" class="admin-main-expanded flex-1 min-h-screen md:ml-64">
-        <nav class="admin-nav px-6 py-4 shadow-lg sticky top-0 z-20">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-4">
-                    <button id="sidebar-toggle" class="p-2 rounded-lg bg-amber-200 hover:bg-amber-300 transition duration-200 md:hidden">
-                        <i class="fas fa-bars text-gray-700"></i>
-                    </button>
-                    <div class="flex items-center">
-                        <img class="h-10 w-10 rounded-full border-2 border-amber-300 shadow-sm" src="../assets/img/BASC_sports_development_office.png" alt="BASC Logo">
-                        <h1 class="ml-3 text-lg font-bold text-gray-800 hidden md:block">BASC Sports Development Office</h1>
-                        <h1 class="ml-3 text-lg font-bold text-gray-800 md:hidden">BASC Sports</h1>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <span class="text-gray-600 text-sm hidden md:block">Welcome, Admin</span>
-                    <div class="h-8 w-8 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 flex items-center justify-center">
-                        <i class="fas fa-user text-white text-sm"></i>
-                    </div>
+        
+        <div class="flex items-center gap-4">
+            <div class="user-info hidden md:flex items-center gap-3">
+                <span class="user-name font-semibold text-gray-800">Admin</span>
+                <div class="user-avatar h-9 w-9 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 flex items-center justify-center text-white font-semibold">
+                    <i class="fas fa-user text-sm"></i>
                 </div>
             </div>
-        </nav>
+        </div>
+    </header>
 
-        <div class="px-6 py-8">
+    <nav class="sidebar fixed left-0 top-0 h-screen bg-gradient-to-b from-amber-50 to-amber-100 z-40 pt-[70px] transition-all duration-350 ease-in-out w-64 overflow-hidden whitespace-nowrap flex flex-col" id="sidebar">
+        <div class="nav-menu p-4 flex-1 overflow-y-auto">
+            <a href="admin-dashboard.php" class="nav-item flex items-center gap-3 p-3 rounded-xl text-gray-700 hover:bg-[#ffd7b2] transition duration-200 mb-2">
+                <i class="fas fa-tachometer-alt w-5 text-center"></i>
+                <span class="nav-text">Dashboard</span>
+            </a>
+            <a href="add-winners.php" class="nav-item flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-md mb-2">
+                <i class="fas fa-trophy w-5 text-center"></i>
+                <span class="nav-text">Add Winners</span>
+            </a>
+            <a href="#" class="nav-item flex items-center gap-3 p-3 rounded-xl text-gray-700 hover:bg-[#ffd7b2] transition duration-200 mb-2">
+                <i class="fas fa-users w-5 text-center"></i>
+                <span class="nav-text">Add Participants</span>
+            </a>
+            <a href="#" class="nav-item flex items-center gap-3 p-3 rounded-xl text-gray-700 hover:bg-[#ffd7b2] transition duration-200 mb-2">
+                <i class="fas fa-calendar-alt w-5 text-center"></i>
+                <span class="nav-text">Schedule</span>
+            </a>
+            <a href="edit-admin.php" class="nav-item flex items-center gap-3 p-3 rounded-xl text-gray-700 hover:bg-[#ffd7b2] transition duration-200 mb-2">
+                <i class="fas fa-medal w-5 text-center"></i>
+                <span class="nav-text">Results</span>
+            </a>
+        </div>
+        
+        <div class="p-4 mt-auto">
+            <a href="../function/admin/destroyer.php" class="logout-btn-full flex items-center justify-center gap-3 p-3 rounded-xl bg-gradient-to-r from-red-500 to-red-600 text-white shadow-md hover:from-red-600 hover:to-red-700 transition duration-200">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-text">Logout</span>
+            </a>
+            
+            <a href="../function/admin/destroyer.php" class="logout-btn-icon hidden items-center justify-center p-3 rounded-xl bg-gradient-to-r from-red-500 to-red-600 text-white shadow-md hover:from-red-600 hover:to-red-700 transition duration-200">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="overlay fixed inset-0 bg-black/50 z-30" id="overlay"></div>
+
+    <main class="main-content flex-1 pt-[70px] md:pl-64 transition-all duration-350 ease-in-out min-h-screen flex flex-col" id="mainContent">
+        <div class="px-6 py-8 flex-1">
             <div class="mb-6">
                 <h2 class="text-2xl font-bold text-gray-800 mb-2">Add Winners</h2>
                 <p class="text-gray-600">Select a sport category and input the winners for each position</p>
@@ -330,89 +299,29 @@ if (!isset($_SESSION['admin_logged_in'])) {
             </div>
         </div>
 
-        <footer class="bg-gradient-to-r from-amber-50 to-amber-100 border-t border-amber-200 py-6 px-6 mt-8">
+        <footer class="bg-gradient-to-r from-amber-50 to-amber-100 border-t border-amber-200 py-4 px-6 mt-auto">
             <div class="flex flex-col sm:flex-row justify-between items-center">
-                <div class="flex sm:flex-row flex-col items-center mb-4 md:mb-0">
-                    <div class="flex flex-row sm:gap-0 gap-1 mb-1 sm:mb-0">
-                        <img class="h-10 w-10 mr-0 sm:mr-2 rounded-full border border-amber-300" src="../assets/img/BASC_sports_development_office.png" alt="BASC Logo">
-                        <img class="h-10 w-10 mr-0 sm:mr-3 rounded-full border border-amber-300" src="../assets/img/BASC_Logo.svg" alt="BASC Logo">
+                <div class="flex sm:flex-row flex-col items-center mb-2 sm:mb-0">
+                    <div class="flex gap-2 mb-1 sm:mb-0">
+                        <img class="h-8 w-8 rounded-full border border-amber-300" src="../assets/img/BASC_sports_development_office.png" alt="BASC Logo">
+                        <img class="h-8 w-8 rounded-full border border-amber-300" src="../assets/img/BASC_Logo.svg" alt="BASC Logo">
                     </div>
-                    <div class="flex flex-col sm:text-start text-center">
-                        <span class="text-gray-700 font-bold block">BASC Sports Development Office</span>
-                        <span class="text-gray-600 text-sm">Promoting Sports Excellence</span>
+                    <div class="text-center sm:text-left sm:ml-3">
+                        <span class="text-gray-700 font-bold text-sm">BASC Sports Development Office</span>
+                        <span class="text-gray-600 text-xs block">Promoting Sports Excellence</span>
                     </div>
                 </div>
-                <div class="text-gray-600 text-sm text-center md:text-right">
+                <div class="text-gray-600 text-xs text-center sm:text-right">
                     <p>&copy; 2025 BSAU Sportsfest. All rights reserved.</p>
                 </div>
             </div>
         </footer>
-    </div>
+    </main>
 
     <script>
-        const sidebar = document.getElementById('sidebar');
-        const sidebarToggle = document.getElementById('sidebar-toggle');
-        const mainContent = document.getElementById('main-content');
-        
-        let isSidebarOpen = window.innerWidth >= 768;
-        
-        function updateSidebarState() {
-            const isMobile = window.innerWidth < 768;
-            
-            if (isMobile) {
-                if (isSidebarOpen) {
-                    sidebar.classList.add('sidebar-mobile-open');
-                    sidebar.classList.remove('sidebar-collapsed');
-                } else {
-                    sidebar.classList.remove('sidebar-mobile-open');
-                    sidebar.classList.add('sidebar-collapsed');
-                }
-                mainContent.classList.remove('admin-main-expanded', 'admin-main-collapsed');
-            } else {
-                if (isSidebarOpen) {
-                    sidebar.classList.remove('sidebar-collapsed');
-                    sidebar.classList.add('sidebar-expanded');
-                    mainContent.classList.remove('admin-main-collapsed');
-                    mainContent.classList.add('admin-main-expanded');
-                } else {
-                    sidebar.classList.add('sidebar-collapsed');
-                    sidebar.classList.remove('sidebar-expanded');
-                    mainContent.classList.remove('admin-main-expanded');
-                    mainContent.classList.add('admin-main-collapsed');
-                }
-            }
-        }
-        
-        updateSidebarState();
-        
-        sidebarToggle.addEventListener('click', () => {
-            isSidebarOpen = !isSidebarOpen;
-            updateSidebarState();
-        });
-        
-        window.addEventListener('resize', updateSidebarState);
-        
-        document.addEventListener('click', (e) => {
-            const isMobile = window.innerWidth < 768;
-            if (isMobile && isSidebarOpen && 
-                !sidebar.contains(e.target) && 
-                !sidebarToggle.contains(e.target)) {
-                isSidebarOpen = false;
-                updateSidebarState();
-            }
-        });
-        
-        // Logout
-        document.getElementById('logout-btn').addEventListener('click', () => {
-            if (confirm('Are you sure you want to logout?')) {
-                window.location.href = '../function/admin/destroyer.php';
-            }
-        });
-        
-        // Reset Form
+        // Form functionality
         document.getElementById('reset-btn').addEventListener('click', () => {
             if (confirm('Are you sure you want to reset the form? All entered data will be lost.')) {
-                // Reset all form elements
                 document.getElementById('type').selectedIndex = 0;
                 document.getElementById('category-div').classList.add('hidden');
                 document.getElementById('winners-div').classList.add('hidden');
@@ -421,14 +330,12 @@ if (!isset($_SESSION['admin_logged_in'])) {
                     document.getElementById('category').selectedIndex = 0;
                 }
                 
-                // Reset all winner selects
                 const winnerSelects = ['gold-winner', 'silver-winner', 'bronze-winner', 'bronze-winner2'];
                 winnerSelects.forEach(id => {
                     const element = document.getElementById(id);
                     if (element) element.selectedIndex = 0;
                 });
                 
-                // Reset all participant inputs
                 const participantInputs = [
                     'gold-participant1', 'gold-participant2',
                     'silver-participant1', 'silver-participant2',
@@ -440,14 +347,12 @@ if (!isset($_SESSION['admin_logged_in'])) {
                     if (element) element.value = '';
                 });
                 
-                // Reset additional bronze section
                 const additionalSilver = document.getElementById('additional-silver');
                 if (additionalSilver) {
                     additionalSilver.classList.add('hidden');
                     additionalSilver.innerHTML = '';
                 }
                 
-                // Reset buttons
                 document.getElementById('remove-another-silver').classList.add('hidden');
                 document.getElementById('add-another-silver').classList.remove('hidden');
                 
