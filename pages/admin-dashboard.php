@@ -65,14 +65,6 @@ $pendingResults = 3;
                 <i class="fas fa-trophy w-5 text-center"></i>
                 <span class="nav-text">Add Winners</span>
             </a>
-            <a href="#" class="nav-item flex items-center gap-3 p-3 rounded-xl text-gray-700 hover:bg-[#ffd7b2] transition duration-200 mb-2">
-                <i class="fas fa-users w-5 text-center"></i>
-                <span class="nav-text">Add Participants</span>
-            </a>
-            <a href="#" class="nav-item flex items-center gap-3 p-3 rounded-xl text-gray-700 hover:bg-[#ffd7b2] transition duration-200 mb-2">
-                <i class="fas fa-calendar-alt w-5 text-center"></i>
-                <span class="nav-text">Schedule</span>
-            </a>
             <a href="edit-admin.php" class="nav-item flex items-center gap-3 p-3 rounded-xl text-gray-700 hover:bg-[#ffd7b2] transition duration-200 mb-2">
                 <i class="fas fa-medal w-5 text-center"></i>
                 <span class="nav-text">Results</span>

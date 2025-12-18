@@ -1,3 +1,15 @@
+<?php
+require '../config/dbcon.php';
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (!isset($_SESSION['admin_logged_in'])) {
+    header("Location: login-admin.php");
+    exit();
+}
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -48,14 +60,6 @@
             <a href="add-winners.php" class="nav-item flex items-center p-3 rounded-xl text-gray-700 hover:bg-[#ffd7b2] transition duration-200 mb-2">
                 <i class="fas fa-trophy w-5 text-center"></i>
                 <span class="nav-text pl-3">Add Winners</span>
-            </a>
-            <a href="#" class="nav-item flex items-center p-3 rounded-xl text-gray-700 hover:bg-[#ffd7b2] transition duration-200 mb-2">
-                <i class="fas fa-users w-5 text-center"></i>
-                <span class="nav-text pl-3">Add Participants</span>
-            </a>
-            <a href="#" class="nav-item flex items-center p-3 rounded-xl text-gray-700 hover:bg-[#ffd7b2] transition duration-200 mb-2">
-                <i class="fas fa-calendar-alt w-5 text-center"></i>
-                <span class="nav-text pl-3">Schedule</span>
             </a>
             <a href="edit-admin.php" class="nav-item flex items-center p-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-md mb-2">
                 <i class="fas fa-medal w-5  text-center"></i>
